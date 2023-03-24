@@ -1,0 +1,26 @@
+.form-group {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    font-weight: bold;
+}
+
+.form-field input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #cccccc;
+}
+
+.alert-danger {
+    color: red;
+}
+
+.form-field .is-invalid {
+    border: 1px solid red;
+}

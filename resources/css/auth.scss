@@ -1,0 +1,22 @@
+.login-page {
+    max-width: 800px;
+}
+
+.body-container {
+    background-color:lightpink;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card-container {
+    max-width: 400px;
+    width: 400px;
+    margin: auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+}

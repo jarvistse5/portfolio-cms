@@ -14,7 +14,7 @@ class PortfolioController extends Controller
             'email' => 'jarvis.tse.developer@gmail.com',
             'linkedin' => 'https://www.linkedin.com/in/wing-hei-tse-b991701b3/',
             'phone' => '+1(416)8246455',
-            'github' => 'https://github.com/jarvisTse',
+            'github' => 'https://github.com/jarvistse5',
         ];
         $skills = [
             'html', 'css', 'JavaScript', 'PHP', 'Laravel', 'Livewire', 'AlpineJS',

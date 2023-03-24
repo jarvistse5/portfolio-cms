@@ -13,4 +13,11 @@ export default defineConfig({
             '$': 'jQuery'
         },
     },
+    build: {
+        rollupOptions: {
+            external: [
+                'jQuery'
+            ],
+        },
+    },
 });

@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    return "It is a demo website for Jarvis Tse";
 });
 
 Route::prefix('cms')->name('cms')->group(function () {

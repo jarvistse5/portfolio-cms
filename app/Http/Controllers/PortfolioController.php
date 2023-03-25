@@ -178,7 +178,7 @@ class PortfolioController extends Controller
         foreach ($files as $file) {
             $filename = $file->getFilename();
             $extension = $file->getExtension();
-            $fileUrl = URL::to('/') . '/' . $path . '/' . $filename;
+            $fileUrl = env('APP_URL') . '/' . $path . '/' . $filename;
             array_push($assets, [
                 'filename' => $filename,
                 'extension' => $extension,

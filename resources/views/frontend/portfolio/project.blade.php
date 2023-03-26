@@ -1,5 +1,5 @@
 <section id="project">
-    <h1>Porject</h1>
+    <h1>Project</h1>
     <div class="project-grid">
         @foreach ($user['projects'] as $index => $project)
             <div class="project-grid-item" 

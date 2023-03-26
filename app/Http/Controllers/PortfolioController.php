@@ -98,7 +98,7 @@ class PortfolioController extends Controller
         $projects = [
             [
                 'name' => 'Hong Kong Science Festival 2023',
-                'description' => 'Bababa...',
+                'description' => 'A virtual exhibition website. The exhibitors can upload their booth info and streaming, so the guests can join this festival virtually.',
                 'skills' => [
                     'Laravel', 'Livewire', 'Javscript', 'TailwindCss'
                 ],
@@ -107,7 +107,7 @@ class PortfolioController extends Controller
             ],
             [
                 'name' => 'Virtually Versailles',
-                'description' => 'Bababa...',
+                'description' => 'The app designed for the French May event is designed to allow tourists to have an immersive experience, combining AR interaction, hologram, 360 images and other technologies, so that everyone can understand of France and its art with fun.',
                 'skills' => [
                     'React Native', 'Laravel'
                 ],
@@ -115,8 +115,8 @@ class PortfolioController extends Controller
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/frenchmay'),
             ],
             [
-                'name' => 'i-CREATe',
-                'description' => 'Bababa...',
+                'name' => 'i-CREATe Virtual Exhibition',
+                'description' => 'A virtual exhibition website. The exhibitors can upload their booth info and streaming, so the guests can join this festival virtually.',
                 'skills' => [
                     'Laravel', 'Livewire', 'Javscript', 'TailwindCss'
                 ],
@@ -125,7 +125,7 @@ class PortfolioController extends Controller
             ],
             [
                 'name' => 'e-signature wall',
-                'description' => 'Bababa...',
+                'description' => 'Sign the signature on iPad, and display the signature on the screen.',
                 'skills' => [
                     'Laravel', 'Javscript', 'CSS'
                 ],
@@ -134,7 +134,7 @@ class PortfolioController extends Controller
             ],
             [
                 'name' => 'Coiner App',
-                'description' => 'Bababa...',
+                'description' => 'An app to store member point and browse information.',
                 'skills' => [
                     'React Native', 'Laravel'
                 ],

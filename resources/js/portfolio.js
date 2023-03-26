@@ -96,7 +96,7 @@ jQuery(($) => {
         let id = $(elem).attr('id');
         $(elem).on('inview', function (event, isInView) {
             if (isInView) {
-                animateCSS('#'+id, 'fadeInUp');
+                animateCSS('#'+id, 'bounceInLeft');
                 $(elem).removeClass('invisible');
             } else {
                 $(elem).addClass('invisible');

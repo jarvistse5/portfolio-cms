@@ -32,17 +32,18 @@ jQuery(($) => {
         $('#menu-button').removeClass('btn-close');
     });
 
-    $('#skill-container').on('inview', function (event, isInView) {
-        if (isInView) {
-            skillRateRun();
-        } else {
-            skillRateGone();
-        }
+    $('.skill-grid').each((index, elem) => {
+        $(elem).on('inview', function (event, isInView) {
+            if (isInView) {
+                skillRateRun(elem);
+            } else {
+                skillRateGone(elem);
+            }
+        });
     });
-
     
-    function skillRateRun() {
-        $('.skill-rating').each((index, item) => {
+    function skillRateRun(elem) {
+        $(elem).find('.skill-rating').each((index, item) => {
             let rate = $(item).attr('data-rate') * 100;
             let width = 0;
             let interval = setInterval(function () {
@@ -55,8 +56,8 @@ jQuery(($) => {
         });
     }
     
-    function skillRateGone() {
-        $('.skill-rating').each((index, item) => {
+    function skillRateGone(elem) {
+        $(elem).find('.skill-rating').each((index, item) => {
             $(item).css("width", '0%');
         });
     }

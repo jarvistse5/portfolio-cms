@@ -102,7 +102,7 @@ class PortfolioController extends Controller
                 'skills' => [
                     'Laravel', 'Livewire', 'Javscript', 'TailwindCss'
                 ],
-                'cover_img' => URL::to('/') . '/assets/jarvis_tse/cover/scifest.png',
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/scifest.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/scifest'),
             ],
             [
@@ -111,7 +111,7 @@ class PortfolioController extends Controller
                 'skills' => [
                     'React Native', 'Laravel'
                 ],
-                'cover_img' => URL::to('/') . '/assets/jarvis_tse/cover/frenchmay.png',
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/frenchmay.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/frenchmay'),
             ],
             [
@@ -120,7 +120,7 @@ class PortfolioController extends Controller
                 'skills' => [
                     'Laravel', 'Livewire', 'Javscript', 'TailwindCss'
                 ],
-                'cover_img' => URL::to('/') . '/assets/jarvis_tse/cover/i-create.png',
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/i-create.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/i-create'),
             ],
             [
@@ -129,7 +129,7 @@ class PortfolioController extends Controller
                 'skills' => [
                     'Laravel', 'Javscript', 'CSS'
                 ],
-                'cover_img' => URL::to('/') . '/assets/jarvis_tse/cover/e-signature.png',
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/e-signature.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/e-signature'),
             ],
             [
@@ -138,7 +138,7 @@ class PortfolioController extends Controller
                 'skills' => [
                     'React Native', 'Laravel'
                 ],
-                'cover_img' => URL::to('/') . '/assets/jarvis_tse/cover/coiner.png',
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/coiner.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/coiner'),
             ],
         ];

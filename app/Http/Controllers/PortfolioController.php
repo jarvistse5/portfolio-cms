@@ -112,7 +112,12 @@ class PortfolioController extends Controller
                     'React Native', 'Laravel'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/frenchmay.png',
-                'assets' => $this->getProjectAssets('assets/jarvis_tse/frenchmay'),
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/frenchmay', [
+                    [
+                        'type' => 'youtube',
+                        'youtube_id' => 'EdNIHr3C5r0',
+                    ]
+                ]),
             ],
             [
                 'name' => 'i-CREATe Virtual Exhibition',
@@ -141,6 +146,20 @@ class PortfolioController extends Controller
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/coiner.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/coiner'),
             ],
+            [
+                'name' => 'Masksapp',
+                'description' => 'Share mask information at the begining of COVID-19',
+                'skills' => [
+                    'Android Studio', 'Java', 'Firebase'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/masksapp.png',
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/masksapp', [
+                    [
+                        'type' => 'youtube',
+                        'youtube_id' => '2d5Q1Nvd01U',
+                    ]
+                ]),
+            ]
         ];
         
         $user = [
@@ -170,9 +189,8 @@ class PortfolioController extends Controller
         ]);
     }
 
-    public function getProjectAssets($path)
+    public function getProjectAssets($path, $assets = [])
     {
-        $assets = [];
         $publicPath = public_path($path);
         $files = File::allFiles($publicPath);
         foreach ($files as $file) {

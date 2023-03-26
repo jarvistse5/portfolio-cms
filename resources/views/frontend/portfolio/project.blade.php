@@ -42,15 +42,27 @@
                             <div class="modal-slide hidden" 
                                 id="project-modal-{{$index}}-page-{{$i+1}}">
                                 @php
-                                    $extension = strtolower($asset['extension']);
-                                    $isImage = $extension == 'png' 
-                                                || $extension == 'jpeg' 
-                                                || $extension == 'jpg' 
-                                                || $extension == 'gif';
-                                    $isVideo = $extension == 'mp4' 
-                                                || $extension == 'mov';
+                                    $isYoutube = false;
+                                    if (data_get($asset, 'type') == 'youtube') {
+                                        $isYoutube = true;
+                                    } else {
+                                        $extension = strtolower($asset['extension']);
+                                        $isImage = $extension == 'png' 
+                                                    || $extension == 'jpeg' 
+                                                    || $extension == 'jpg' 
+                                                    || $extension == 'gif';
+                                        $isVideo = $extension == 'mp4' 
+                                                    || $extension == 'mov';
+                                    }
                                 @endphp
-                                @if ($isImage)
+                                @if ($isYoutube)
+                                        <iframe class="webinar-player"
+                                            src="https://www.youtube.com/embed/{{data_get($asset, 'youtube_id')}}"
+                                            frameborder="0"
+                                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                    </iframe>
+                                @elseif ($isImage)
                                     <img src="{{$asset['fileUrl']}}">
                                 @elseif ($isVideo)
                                     <video controls>

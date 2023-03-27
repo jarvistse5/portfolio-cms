@@ -112,9 +112,9 @@ jQuery(($) => {
         });
     }
 
-    Livewire.on('changed', () => {
-        stopVideos();
-    });
+    // Livewire.on('changed', () => {
+    //     stopVideos();
+    // });
     
     var i = 0;
     var txt = $('#typing-position').attr('data-position');

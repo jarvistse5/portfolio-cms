@@ -129,7 +129,7 @@ class PortfolioController extends Controller
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/i-create'),
             ],
             [
-                'name' => 'e-signature wall',
+                'name' => 'E-Signature Wall',
                 'description' => 'Sign the signature on iPad, and display the signature on the screen.',
                 'skills' => [
                     'Laravel', 'Javscript', 'CSS'
@@ -147,6 +147,38 @@ class PortfolioController extends Controller
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/coiner'),
             ],
             [
+                'name' => 'iTrain B2B2C Convertion',
+                'description' => 'Convert e-learning platform into B2C / B2B2C model, and revamp the UI of the whole system.',
+                'skills' => [
+                    'Angular', 'Laravel'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/itrain.png',
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/itrain', [
+                    [
+                        'type' => 'youtube',
+                        'youtube_id' => 'pigTNV_SNDA',
+                    ],
+                    [
+                        'type' => 'youtube',
+                        'youtube_id' => 'zbTLx5nQJ8Y',
+                    ],
+                ]),
+            ],
+            [
+                'name' => 'File Picker Component',
+                'description' => 'A file picker component using Augular, which is allowing multi-select, adjust, preview function.',
+                'skills' => [
+                    'Angular'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/filepicker.png',
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/filepicker', [
+                    [
+                        'type' => 'youtube',
+                        'youtube_id' => '25gmRKZuBFc',
+                    ],
+                ]),
+            ],
+            [
                 'name' => 'Masksapp',
                 'description' => 'Share mask information at the begining of COVID-19',
                 'skills' => [
@@ -157,6 +189,20 @@ class PortfolioController extends Controller
                     [
                         'type' => 'youtube',
                         'youtube_id' => '2d5Q1Nvd01U',
+                    ]
+                ]),
+            ],
+            [
+                'name' => 'Low Cost Book Tracking System Prototype',
+                'description' => 'Using RFID technology to real time track book, we build a prototype with a simple library management system and Android App for the staff.',
+                'skills' => [
+                    'RFID', 'Laravel', 'Android Studio', 'Java', 'C++'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/book-tracking.png',
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/book-tracking', [
+                    [
+                        'type' => 'youtube',
+                        'youtube_id' => 'O1yaCYtzeJs'
                     ]
                 ]),
             ]
@@ -192,6 +238,9 @@ class PortfolioController extends Controller
     public function getProjectAssets($path, $assets = [])
     {
         $publicPath = public_path($path);
+        if (!$publicPath || !File::exists($publicPath)) {
+            return $assets;
+        }
         $files = File::allFiles($publicPath);
         foreach ($files as $file) {
             $filename = $file->getFilename();

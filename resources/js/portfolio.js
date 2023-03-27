@@ -3,7 +3,6 @@ import jquery from 'jquery';
 window.jQuery = window.$ = jquery;
 import './svg3dtagcloud/jquery.svg3dtagcloud.js';
 import 'jquery-inview';
-// import animateCSS from 'animate.css';
 
 jQuery(($) => {
     let pageEl = $('.portfolio-container');
@@ -105,55 +104,16 @@ jQuery(($) => {
         });
     });
 
-
-    let page = 1;
-    let currentItemId = 0;
-    let assetCount = 0;
-    $('.project-grid-item').each((index, elem) => {
-        let id = $(elem).attr('data-id');
-        let count = $(elem).attr('data-asset-count');
-        $(elem).on('click', function () {
-            $('#project-modal-' + id).css('display', 'block');
-            currentItemId = id;
-            page = 1;
-            assetCount = count;
-            $('#project-modal-' + currentItemId + '-page-' + page).removeClass('hidden');
-        });
-    });
-
-    $('.modal-close').each((index, elem) => {
-        let modal = $(elem).attr('data-modal');
-        $(elem).on('click', function () {
-            $('video').trigger('pause');
-            $('#' + modal).css('display', 'none');
-            $('.modal-slide').addClass('hidden');
-        });
-    });
-
-    $('.modal-prev').on('click', function () {
-        if (page > 1) {
-            page--;
-        }
-        $('.modal-slide').addClass('hidden');
-        $('#project-modal-' + currentItemId + '-page-' + page).removeClass('hidden');
+    function stopVideos () {
         $('video').trigger('pause');
         $('.youtube-player').each(function(){
             var el_src = $(this).attr("src");
             $(this).attr("src",el_src);
         });
-    });
+    }
 
-    $('.modal-next').on('click', function () {
-        if (page < assetCount) {
-            page++;
-        }
-        $('.modal-slide').addClass('hidden');
-        $('#project-modal-' + currentItemId + '-page-' + page).removeClass('hidden');
-        $('video').trigger('pause');
-        $('.youtube-player').each(function(){
-            var el_src = $(this).attr("src");
-            $(this).attr("src",el_src);
-        });
+    Livewire.on('changed', () => {
+        stopVideos();
     });
     
     var i = 0;

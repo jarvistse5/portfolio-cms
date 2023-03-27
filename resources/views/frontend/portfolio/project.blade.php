@@ -56,7 +56,7 @@
                                     }
                                 @endphp
                                 @if ($isYoutube)
-                                        <iframe class="webinar-player"
+                                        <iframe class="youtube-player"
                                             src="https://www.youtube.com/embed/{{data_get($asset, 'youtube_id')}}"
                                             frameborder="0"
                                             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

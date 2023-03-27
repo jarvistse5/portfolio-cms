@@ -137,6 +137,10 @@ jQuery(($) => {
         $('.modal-slide').addClass('hidden');
         $('#project-modal-' + currentItemId + '-page-' + page).removeClass('hidden');
         $('video').trigger('pause');
+        $('.youtube-player').each(function(){
+            var el_src = $(this).attr("src");
+            $(this).attr("src",el_src);
+        });
     });
 
     $('.modal-next').on('click', function () {
@@ -146,6 +150,10 @@ jQuery(($) => {
         $('.modal-slide').addClass('hidden');
         $('#project-modal-' + currentItemId + '-page-' + page).removeClass('hidden');
         $('video').trigger('pause');
+        $('.youtube-player').each(function(){
+            var el_src = $(this).attr("src");
+            $(this).attr("src",el_src);
+        });
     });
     
     var i = 0;

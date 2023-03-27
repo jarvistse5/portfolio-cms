@@ -11,7 +11,7 @@
                 </div>
                 <div class="project-grid-body">
                     <div class="project-grid-name">{{$project['name']}}</div>
-                    <div class="flex flex-wrap gap-1">
+                    <div class="flex flex-wrap gap-1 py-2">
                         @foreach ($project['skills'] as $skill)
                             <div class="skill-label">
                                 {{$skill}}
@@ -24,9 +24,9 @@
                 id="project-modal-{{$index}}">
                 <div class="modal-content">
                     <span class="modal-close" data-modal="project-modal-{{$index}}">&times;</span>
-                    <p>{{$project['name']}}</p>
+                    <p class="modal-content-title">{{$project['name']}}</p>
                     <p>{{$project['description']}}</p>
-                    <div class="flex flex-wrap gap-1">
+                    <div class="flex flex-wrap gap-1 py-2">
                         @foreach ($project['skills'] as $skill)
                             <div class="skill-label">
                                 {{$skill}}

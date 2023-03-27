@@ -299,6 +299,16 @@ h1 {
     color: #000;
     z-index: 30;
 
+    .modal-content {
+        max-height: 80vh;
+        overflow: auto;
+    }
+
+    .modal-content-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
     .project-assets {
         position: relative;
     }
@@ -313,7 +323,7 @@ h1 {
         iframe {
             max-height: 60vh;
             width: 80%;
-            height: 60vh;
+            height: 50vh;
             margin: auto;
         }
     }

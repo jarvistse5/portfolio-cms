@@ -19,7 +19,7 @@ class PortfolioController extends Controller
         $skills = [
             'html', 'css', 'JavaScript', 'PHP', 'Laravel', 'Livewire', 'AlpineJS',
             'Docker', 'AWS', 'bootstrap', 'Java', 'ReactJS', 'React Native',
-            'TailwindCSS', 'Python', 'C++', 'Angular 2', 'MySQL', 'Git',
+            'TailwindCSS', 'Python', 'C++', 'Angular 2', 'MySQL', 'Git', 'Stripe'
         ];
         $skillRate = [
             'Frontend' => [

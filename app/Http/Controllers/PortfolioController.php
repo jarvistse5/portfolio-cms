@@ -17,9 +17,10 @@ class PortfolioController extends Controller
             'github' => 'https://github.com/jarvistse5',
         ];
         $skills = [
-            'html', 'css', 'JavaScript', 'PHP', 'Laravel', 'Livewire', 'AlpineJS',
-            'Docker', 'AWS', 'bootstrap', 'Java', 'ReactJS', 'React Native',
-            'TailwindCSS', 'Python', 'C++', 'Angular 2', 'MySQL', 'Git', 'Stripe'
+            'HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'Livewire', 'AlpineJS',
+            'Docker', 'AWS', 'Bootstrap', 'Java', 'ReactJS', 'React Native',
+            'TailwindCSS', 'Python', 'C++', 'Angular 2', 'MySQL', 'Git', 'Stripe',
+            'Redis', 'Nginx', 'jQuery',
         ];
         $skillRate = [
             'Frontend' => [

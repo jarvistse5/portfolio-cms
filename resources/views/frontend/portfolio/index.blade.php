@@ -26,7 +26,7 @@
                 font-family: sans-serif;
             }
         </style>
-        @livewireStyles
+        @livewireStyles()
     </head>
     <body class="portfolio-body">
         @include('frontend.portfolio.header')
@@ -37,6 +37,6 @@
             @include('frontend.portfolio.experience')
             @include('frontend.portfolio.project')
         </div>
-        @livewireScripts
+        @livewireScripts()
     </body>
 </html>

@@ -4,6 +4,7 @@
 
 <section id="skills">
     <h1>Skills</h1>
+    <br>
     <div id="tagcloud"></div>
     <div id="skill-container" class="skill-container">
         @foreach (data_get($user, 'skillRate') as $skillSessionLabel => $skillSession)

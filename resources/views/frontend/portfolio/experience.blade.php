@@ -1,5 +1,6 @@
 <section id="experience">
     <h1>Experience</h1>
+    <br>
     <div class="experience-wrapper">
         @foreach ($user['experiences'] as 
         $index => $experience)

@@ -7,3 +7,11 @@
 @import 'auth.scss';
 @import 'common.scss';
 @import 'portfolio.scss';
+
+
+:export {
+    primary-color: #007bff;
+    primary-text-color: #FF0000;
+    secondary-color: #00FF00;
+    secondary-text-color: #0000FF;
+}

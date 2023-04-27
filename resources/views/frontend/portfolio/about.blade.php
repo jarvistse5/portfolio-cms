@@ -36,4 +36,12 @@
             </a>
         @endif
     </div>
+    <div class="scroll-down-container">
+        <div class="scroll-down animate__animated animate__bounce animate__infinite">
+            <div>Scroll Down</div>
+            <div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
 </section>

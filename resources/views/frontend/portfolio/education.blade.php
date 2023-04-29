@@ -1,5 +1,9 @@
 <section id="education">
-    <h1>Education</h1>
+    <div class="section-title-container">
+        <div class="title-gradient"></div>
+        <h1>Education</h1>
+        <div class="dot"></div>
+    </div>
     <br>
     <div class="education-wrapper">
         @foreach ($user['educations'] as $index => $education)

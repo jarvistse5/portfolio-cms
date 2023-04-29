@@ -3,7 +3,11 @@
 </script>
 
 <section id="skills">
-    <h1>Skills</h1>
+    <div class="section-title-container">
+        <div class="title-gradient"></div>
+        <h1>Skills</h1>
+        <div class="dot"></div>
+    </div>
     <br>
     <div id="tagcloud"></div>
     <div id="skill-container" class="skill-container">

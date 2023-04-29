@@ -103,6 +103,27 @@
     z-index: -1;
 }
 
+.section-title-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .title-gradient {
+        background: rgb(101,239,252);
+        background: linear-gradient(90deg, rgba(101,239,252,1) 0%, rgba(240,46,194,1) 100%);        
+        width: 2rem;
+        height: 2px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+        border: 1px solid $primary-text;
+        border-radius: 50%;
+        background: $primary-text;
+    }
+}
+
 #about {
     padding: 9rem 3rem;
     min-height: 100vh;

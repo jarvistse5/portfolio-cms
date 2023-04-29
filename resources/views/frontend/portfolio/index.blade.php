@@ -21,6 +21,14 @@
         @vite(['resources/css/app.scss', 'resources/js/app.js'])
         @stack('post-head-css')
 
+        <script 
+            src='https://cdn.jsdelivr.net/npm/ms-cursor@1.2.0/index.min.js' 
+            size="30"
+            {{-- gradient="#65effc, #72def7, #7fccf2, #8abced, #99a8e7, #a598e2, #b385dc, #bf74d7, #ca64d2, #db4ccb, #f02ec2" --}}
+            >
+        </script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ms-cursor@1.2.0/style.min.css"/>
+
         <style>
             body {
                 font-family: sans-serif;

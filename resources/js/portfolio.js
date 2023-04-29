@@ -4,6 +4,7 @@ window.jQuery = window.$ = jquery;
 import './svg3dtagcloud/jquery.svg3dtagcloud.js';
 import 'jquery-inview';
 import { DotsAnimationFactory, IAnimationOptions, IAnimationObject } from "dots-animation";
+import colorVariables from '../css/_variables.module.scss';
 
 jQuery(($) => {
     let pageEl = $('.portfolio-container');
@@ -41,7 +42,7 @@ jQuery(($) => {
         blur: 0, // blur intensity in px, 0 - disabled
       
         fill: true, // fill dots with color
-        colorsFill: ["#ffffff", "#8cb7df", "#ad6fa0"], // hex color strings array, color is picked randomly from color array
+        colorsFill: [colorVariables.primaryText, colorVariables.primaryTheme, colorVariables.secondaryTheme], // hex color strings array, color is picked randomly from color array
         opacityFill: null, // null for random opacity | from 0 to 100 where 0 means transparent
         opacityFillMin: 0, // from 0 to 100 where 0 means transparent
         opacityFillStep: 0, // from 0 to 100 where 0 means no opacity changes per frame, for creating blinking effect
@@ -217,7 +218,7 @@ jQuery(($) => {
         speed: 0.5,
         fontFamily: 'Oswald, Arial, sans-serif',
         fontSize: '24',
-        fontColor: '#F6E71D',
+        fontColor: colorVariables.primaryTheme100,
         fontWeight: 'normal',//bold
         fontStyle: 'normal',//italic 
         fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded

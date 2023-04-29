@@ -1,0 +1,46 @@
+$primary-bg: #000000 !default;
+$primary-bg-900: darken($primary-bg, 60%);
+$primary-bg-700: darken($primary-bg, 30%);
+$primary-bg-300: scale-color($primary-bg, $lightness: 30%);
+$primary-bg-100 : scale-color($primary-bg, $lightness: 60%);
+
+$primary-text: #FFFFFF !default;
+$primary-text-900: darken($primary-text, 60%);
+$primary-text-700: darken($primary-text, 30%);
+$primary-text-300: scale-color($primary-text, $lightness: 30%);
+$primary-text-100 : scale-color($primary-text, $lightness: 60%);
+
+$primary-theme: #AD6FA0;
+$primary-theme-900: darken($primary-theme, 60%);
+$primary-theme-700: darken($primary-theme, 30%);
+$primary-theme-300: scale-color($primary-theme, $lightness: 30%);
+$primary-theme-100 : scale-color($primary-theme, $lightness: 60%);
+
+$secondary-theme: #8CB7DF;
+$secondary-theme-900: darken($secondary-theme, 60%);
+$secondary-theme-700: darken($secondary-theme, 30%);
+$secondary-theme-300: scale-color($secondary-theme, $lightness: 30%);
+$secondary-theme-100 : scale-color($secondary-theme, $lightness: 60%);
+
+:export {
+    primaryBg: $primary-bg;
+    primaryBg900: $primary-bg-900;
+    primaryBg700: $primary-bg-700;
+    primaryBg300: $primary-bg-300;
+    primaryBg100: $primary-bg-100;
+    primaryText: $primary-text;
+    primaryText900: $primary-text-900;
+    primaryText700: $primary-text-700;
+    primaryText300: $primary-text-300;
+    primaryText100: $primary-text-100;
+    primaryTheme: $primary-theme;
+    primaryTheme900: $primary-theme-900;
+    primaryTheme700: $primary-theme-700;
+    primaryTheme300: $primary-theme-300;
+    primaryTheme100: $primary-theme-100;
+    secondaryTheme: $secondary-theme;
+    secondaryTheme900: $secondary-theme-900;
+    secondaryTheme700: $secondary-theme-700;
+    secondaryTheme300: $secondary-theme-300;
+    secondaryTheme100: $secondary-theme-100;
+}

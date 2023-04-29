@@ -3,7 +3,7 @@ import jquery from 'jquery';
 window.jQuery = window.$ = jquery;
 import './svg3dtagcloud/jquery.svg3dtagcloud.js';
 import 'jquery-inview';
-import { DotsAnimationFactory, IAnimationOptions, IAnimationObject } from "dots-animation";
+import { DotsAnimationFactory } from "dots-animation";
 import colorVariables from '../css/_variables.module.scss';
 
 jQuery(($) => {

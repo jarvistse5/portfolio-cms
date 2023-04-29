@@ -17,7 +17,7 @@ export default defineConfig({
         rollupOptions: {
             external: [
                 'jQuery',
-                // 'dots-animation'
+                'dots-animation'
             ],
         },
     },

@@ -3,7 +3,7 @@ import jquery from 'jquery';
 window.jQuery = window.$ = jquery;
 import './svg3dtagcloud/jquery.svg3dtagcloud.js';
 import 'jquery-inview';
-// import { DotsAnimationFactory } from "dots-animation";
+import { DotsAnimationFactory } from "dots-animation";
 import colorVariables from '../css/_variables.module.scss';
 
 jQuery(($) => {
@@ -69,9 +69,9 @@ jQuery(($) => {
         onHoverMoveRadius: 50, // positive number, minimum distance from mouse cursor to any dot
         onHoverLineRadius: 150 // positive number, maximum length of lines drawn between mouse cursor and adjacent dots 
     };
-    // const animationControl = DotsAnimationFactory
-    //     .createAnimation("#body-bg-animation", "body-bg-animation-canvas", options);
-    // animationControl.start(); // 'stop' and 'pause' methods are also provided in 'IAnimationObject'
+    const animationControl = DotsAnimationFactory
+        .createAnimation("#body-bg-animation", "body-bg-animation-canvas", options);
+    animationControl.start(); // 'stop' and 'pause' methods are also provided in 'IAnimationObject'
 
     $(".menu-item").on('click', function() {
         var liText = $(this).attr('data-scroll');

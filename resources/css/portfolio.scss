@@ -27,7 +27,8 @@
         cursor: pointer;
     }
 
-    .menu-item {
+    .menu-item:hover {
+        color: $primary-theme;
     }
 
     .menu-container-mobile {

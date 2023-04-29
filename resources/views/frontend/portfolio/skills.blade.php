@@ -10,6 +10,7 @@
         @foreach (data_get($user, 'skillRate') as $skillSessionLabel => $skillSession)
             <div class="skill-grid">
                 <div class="skill-session-label">{{$skillSessionLabel}}</div>
+                <div class="skill-session-divider"></div>
                 @foreach ($skillSession as $skillLabel => $skillRate)
                     <div class="skill-grid-item">
                         <div>{{$skillLabel}}</div>

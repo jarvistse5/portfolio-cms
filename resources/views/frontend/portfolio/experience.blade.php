@@ -6,11 +6,13 @@
         $index => $experience)
         <div class="experience-container invisible"
             id="experience-container-{{$index}}">
-                <div class="experience-period text-end">
-                    {{$experience['period_start']}} - {{$experience['period_end']}}
-                </div>
-                <div class="experience-title">
-                    {{$experience['title']}}
+                <div class="experience-header">
+                    <div class="experience-title">
+                        {{$experience['title']}}
+                    </div>
+                    <div class="experience-period">
+                        {{$experience['period_start']}} - {{$experience['period_end']}}
+                    </div>
                 </div>
                 <div class="experience-company">
                     {{$experience['company']}}

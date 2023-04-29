@@ -31,6 +31,7 @@
     <body class="portfolio-body">
         @include('frontend.portfolio.header')
         <div class="portfolio-container">
+            <div id="body-bg-animation" class="animation-bg"></div>
             @include('frontend.portfolio.about')
             @include('frontend.portfolio.skills')
             @include('frontend.portfolio.education')

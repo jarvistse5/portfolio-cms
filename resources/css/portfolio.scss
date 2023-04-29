@@ -95,6 +95,13 @@
     }
 }
 
+.animation-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 #about {
     padding: 9rem 3rem;
     min-height: 100vh;
@@ -153,6 +160,7 @@
         border: 1px solid $primary-text;
         border-radius: 12px;
         padding: 16px;
+        background-color: $primary-bg;
     }
 
     .skill-grid-item {
@@ -246,6 +254,7 @@ h1 {
         border: 1px solid $primary-text;
         border-radius: 12px;
         margin-bottom: 2rem;
+        background-color: $primary-bg;
     }
 
     .education-name {
@@ -262,6 +271,7 @@ h1 {
         border: 1px solid $primary-text;
         border-radius: 12px;
         margin-bottom: 2rem;
+        background-color: $primary-bg;
     }
 
     .experience-title {

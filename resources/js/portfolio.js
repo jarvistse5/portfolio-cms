@@ -3,12 +3,74 @@ import jquery from 'jquery';
 window.jQuery = window.$ = jquery;
 import './svg3dtagcloud/jquery.svg3dtagcloud.js';
 import 'jquery-inview';
+import { DotsAnimationFactory, IAnimationOptions, IAnimationObject } from "dots-animation";
 
 jQuery(($) => {
     let pageEl = $('.portfolio-container');
     if (pageEl.length === 0){
         return;
     }
+
+    /** Background animation **/
+    const options = {
+        // more fps - faster and smoother animation, highly affects performance
+        // fps stability depends on client hardware
+        expectedFps: 60, // positive integer  
+      
+        // number option defines maximum number of dots in canvas at the same time
+        // regardless of canvas size
+        // if number option is not null, density option will be ignored
+        number: null, // null or positive integer, affects performance
+        // density option defines maximum number of dots per canvas pixel
+        density: 0.00005, // positive number, affects performance
+      
+        "dprDependentDensity": true, // use dpr in density calculation  
+        "drpDependentDimensions": true, // use dpr in size and speed calculations
+      
+        // dots radius is random value between minR and MaxR
+        minR: 1, // only positive values, it's desirable to use integers only for faster calculations
+        maxR: 6, // only positive values, it's desirable to use integers only for faster calculations
+        
+        // horizontal dots speed is random value between minSpeedX and minSpeedX  
+        // vertical dots speed is random value between minSpeedY and minSpeedY
+        minSpeedX: -0.5, // any number, sigh defines direction of movement
+        minSpeedX: 0.5, // any number, sigh defines direction of movement
+        minSpeedY: -0.5, // any number, sigh defines direction of movement
+        maxSpeedY: 0.5, // any number, sigh defines direction of movement
+        
+        blur: 0, // blur intensity in px, 0 - disabled
+      
+        fill: true, // fill dots with color
+        colorsFill: ["#ffffff", "#8cb7df", "#ad6fa0"], // hex color strings array, color is picked randomly from color array
+        opacityFill: null, // null for random opacity | from 0 to 100 where 0 means transparent
+        opacityFillMin: 0, // from 0 to 100 where 0 means transparent
+        opacityFillStep: 0, // from 0 to 100 where 0 means no opacity changes per frame, for creating blinking effect
+      
+        stroke: false, // circle dots with color
+        colorsStroke: ["#ffffff"], // hex color strings array, color is picked randomly from color array
+        opacityStroke: 1, // null for random opacity | from 0 to 100 where 0 means transparent
+        opacityStrokeMin: 0, // from 0 to 100 where 0 means transparent
+        opacityStrokeStep: 0, // from 0 to 100 where 0 means no opacity changes per frame, for creating blinking effect
+        
+        drawLines: true, // enable drawing lines between adjacent dots, most performance decreasing feature
+        lineColor: "#717892", // hex color string
+        lineLength: 150, // positive integer, maximum length of lines drawn between dots
+        lineWidth: 2, // positive integer
+        
+        actionOnClick: false, // enable actions on mouse click
+        actionOnHover: true, // enable actions on mouse move
+        onClickCreate: false, // enable creating new dots in current mouse cursor position on click
+        onClickMove: false, // enable moving adjacent dots away from mouse cursor on click
+        onHoverMove: true, // enable moving adjacent dots away from mouse cursor on hover
+        onHoverDrawLines: true, // enable drawing lines between mouse cursor and adjacent dots
+        onClickCreateNDots: 10, // positive number, number of dots to create on mouse click
+        onClickMoveRadius: 200, // positive number, minimum distance from mouse cursor to any dot after mouse click
+        onHoverMoveRadius: 50, // positive number, minimum distance from mouse cursor to any dot
+        onHoverLineRadius: 150 // positive number, maximum length of lines drawn between mouse cursor and adjacent dots 
+    };
+    const animationControl = DotsAnimationFactory
+        .createAnimation("#body-bg-animation", "body-bg-animation-canvas", options);
+    animationControl.start(); // 'stop' and 'pause' methods are also provided in 'IAnimationObject'
 
     $(".menu-item").on('click', function() {
         var liText = $(this).attr('data-scroll');
@@ -147,7 +209,7 @@ jQuery(($) => {
         radius: '65%',
         radiusMin: 75,
         bgDraw: true,
-        bgColor: '#000',
+        bgColor: 'transparent',
         opacityOver: 1.00,
         opacityOut: 1,
         opacitySpeed: 1,

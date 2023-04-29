@@ -101,7 +101,7 @@ class PortfolioController extends Controller
                 'name' => 'Hong Kong Science Festival 2023',
                 'description' => 'A virtual exhibition website. The exhibitors can upload their booth info and streaming, so the guests can join this festival virtually.',
                 'skills' => [
-                    'Laravel', 'Livewire', 'Javscript', 'TailwindCss'
+                    'Laravel', 'Livewire', 'Javascript', 'TailwindCss'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/scifest.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/scifest'),
@@ -124,7 +124,7 @@ class PortfolioController extends Controller
                 'name' => 'i-CREATe Virtual Exhibition',
                 'description' => 'A virtual exhibition website. The exhibitors can upload their booth info and streaming, so the guests can join this festival virtually.',
                 'skills' => [
-                    'Laravel', 'Livewire', 'Javscript', 'TailwindCss'
+                    'Laravel', 'Livewire', 'Javascript', 'TailwindCss'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/i-create.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/i-create'),
@@ -133,7 +133,7 @@ class PortfolioController extends Controller
                 'name' => 'E-Signature Wall',
                 'description' => 'Sign the signature on iPad, and display the signature on the screen.',
                 'skills' => [
-                    'Laravel', 'Javscript', 'CSS'
+                    'Laravel', 'Javascript', 'CSS'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/e-signature.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/e-signature'),

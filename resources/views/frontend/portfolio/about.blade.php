@@ -52,4 +52,5 @@
             </div>
         </div>
     </div>
+    <div class="gradient-layer"></div>
 </section>

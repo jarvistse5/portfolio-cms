@@ -15,6 +15,7 @@ class PortfolioController extends Controller
             'linkedin' => 'https://www.linkedin.com/in/wing-hei-tse-b991701b3/',
             'phone' => '+1(416)8246455',
             'github' => 'https://github.com/jarvistse5',
+            'resume' => env('APP_URL') . '/assets/jarvis_tse/doc/resume.pdf',
         ];
         $skills = [
             'HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'Livewire', 'AlpineJS',

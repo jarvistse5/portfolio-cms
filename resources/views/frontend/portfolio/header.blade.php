@@ -49,6 +49,12 @@
                         <i class="fa-brands fa-github"></i>
                     </a>
                 @endif
+                @if (isset($user['contacts']['resume']) && $user['contacts']['resume'])
+                    <a class="contact-button"
+                        href="{{$user['contacts']['resume']}}" target="_blank">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                @endif
             </div>
         </div>
     </div>

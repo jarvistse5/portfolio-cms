@@ -153,6 +153,7 @@ body {
 #about {
     padding: 9rem 3rem;
     min-height: 100vh;
+    min-height: -webkit-fill-available;
     position: relative;
 
     .about-text-container {

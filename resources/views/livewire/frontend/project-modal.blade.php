@@ -33,7 +33,7 @@
                 <p>{{$selectedProject['description']}}</p>
                 <div class="flex flex-wrap gap-1 py-2">
                     @foreach ($selectedProject['skills'] as $skill)
-                        <div class="skill-label">
+                        <div class="modal-skill-label">
                             {{$skill}}
                         </div>
                     @endforeach

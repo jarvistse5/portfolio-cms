@@ -1,14 +1,16 @@
 <section id="about">
-    <div class="">
-        @foreach (explode(PHP_EOL,$user['intro']) as $sentense)
-        <h1>
-            @foreach (str_split($sentense) as $char)
-                <span class="blast">{{$char}}</span>
+    <div class="about-text-container">
+        <div class="padding-intro">
+            @foreach (explode(PHP_EOL,$user['intro']) as $sentense)
+            <h1 class="padding-intro">
+                @foreach (str_split($sentense) as $char)
+                    <span class="blast">{{$char}}</span>
+                @endforeach
+            </h1>
             @endforeach
-        </h1>
-        @endforeach
-    </div>
-    <div id="typing-position" class="typing" data-position="{{$user['subTitle']}}">
+        </div>
+        <div id="typing-position" class="typing" data-position="{{$user['subTitle']}}">
+        </div>
     </div>
     <div class="contacts-container">
         @if (isset($user['contacts']['email']) && $user['contacts']['email'])

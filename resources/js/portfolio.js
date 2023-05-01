@@ -94,6 +94,15 @@ jQuery(($) => {
         $('#menu-button').removeClass('btn-close');
     });
 
+    $(window).on('scroll', function (event) {
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+            $('.header-container').addClass('primary-bg');
+        } else {
+            $('.header-container').removeClass('primary-bg');
+        }
+    });
+
     $('.skill-grid').each((index, elem) => {
         $(elem).on('inview', function (event, isInView) {
             if (isInView) {

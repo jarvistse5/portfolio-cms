@@ -1,5 +1,9 @@
 @import '_variables.module.scss';
 
+body {
+    font-family: sans-serif;
+}
+
 .portfolio-body {
     background-color: $primary-bg;
     color: $primary-text;
@@ -9,9 +13,28 @@
     color: $primary-text;
 }
 
+.about_bg {
+    min-height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.primary-bg {
+    background-color: $primary-bg;
+}
+
 .header-container {
     z-index: 20;
-    background-color: $primary-bg;
+    // background-color: $primary-bg;
     color: $primary-text;
     position: fixed;
     top: 0;
@@ -89,6 +112,7 @@
             position: absolute;
             bottom: 10%;
             display: flex;
+            align-items: center;
             gap: 24px;
             justify-content: center;
             width: 100%;
@@ -130,6 +154,16 @@
     min-height: 100vh;
     position: relative;
 
+    .about-text-container {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    }
+
+    .padding-intro {
+        padding-bottom: 30px;
+    }
+
     .scroll-down-container {
         position: absolute;
         margin-left: auto;
@@ -155,6 +189,7 @@
     right: 5%;
     bottom: 10%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 12px;
 
@@ -522,5 +557,12 @@ h1 {
 
     .numberText {
         text-align: center;
+    }
+
+    .modal-skill-label {
+        border: 2px solid $primary-theme;
+        border-radius: 50px;
+        padding: 4px 28px;
+        color: $primary-theme;
     }
 }

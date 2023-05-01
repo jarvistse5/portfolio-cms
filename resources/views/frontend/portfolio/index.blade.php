@@ -29,14 +29,12 @@
         </script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ms-cursor@1.2.0/style.min.css"/>
 
-        <style>
-            body {
-                font-family: sans-serif;
-            }
-        </style>
         @livewireStyles()
     </head>
     <body class="portfolio-body">
+        <div class="about_bg">
+            <img src="{{url('assets/images/about_bg.png')}}" alt="background image">
+        </div>
         @include('frontend.portfolio.header')
         <div class="portfolio-container">
             <div id="body-bg-animation" class="animation-bg"></div>

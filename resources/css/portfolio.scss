@@ -375,13 +375,61 @@ h1 {
 
     .project-grid {
         @apply grid gap-8 grid-cols-1 md:grid-cols-2;
+
+        .project-grid-item:nth-child(even) {
+            border-color: $secondary-theme;
+            color: $secondary-theme;
+
+            .project-grid-body {
+                border-color: $secondary-theme;
+            }
+
+            .skill-label {
+                border-color: $secondary-theme;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .project-grid {
+            @apply grid gap-8 grid-cols-1 md:grid-cols-2;
+    
+            .project-grid-item:nth-child(4n+2),
+            .project-grid-item:nth-child(4n+3) {
+                border-color: $secondary-theme;
+                color: $secondary-theme;
+    
+                .project-grid-body {
+                    border-color: $secondary-theme;
+                }
+    
+                .skill-label {
+                    border-color: $secondary-theme;
+                }
+            }
+
+            .project-grid-item:nth-child(4n+1),
+            .project-grid-item:nth-child(4n+4) {
+                border-color: $primary-theme;
+                color: $primary-theme;
+    
+                .project-grid-body {
+                    border-color: $primary-theme;
+                }
+    
+                .skill-label {
+                    border-color: $primary-theme;
+                }
+            }
+        }
     }
 
     .project-grid-item {
-        background: $primary-text;
-        color: #000;
-        border-radius: 02px;
+        background: $primary-bg;
         cursor: pointer;
+        border: 2px solid $primary-theme;
+        border-radius: 10px;
+        color: $primary-theme;
     }
 
     .project-grid-image {
@@ -390,8 +438,8 @@ h1 {
         background: #CCCCCC;
 
         img {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
             object-fit: contain;
             margin: auto;
         }
@@ -399,6 +447,7 @@ h1 {
 
     .project-grid-body {
         padding: 1rem;
+        border-top: 2px solid $primary-theme;
     }
 
     .project-grid-name {
@@ -406,9 +455,9 @@ h1 {
     }
 
     .skill-label {
-        background: #CCCCCC;
-        border-radius: 25px;
-        padding: 0 12px;
+        border: 2px solid $primary-theme;
+        border-radius: 50px;
+        padding: 4px 28px;
     }
 }
 

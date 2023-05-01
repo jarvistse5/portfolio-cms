@@ -11,7 +11,7 @@
                 </div>
                 <div class="project-grid-body">
                     <div class="project-grid-name">{{$project['name']}}</div>
-                    <div class="flex flex-wrap gap-1 py-2">
+                    <div class="flex flex-wrap gap-3 py-2">
                         @foreach ($project['skills'] as $skill)
                             <div class="skill-label">
                                 {{$skill}}

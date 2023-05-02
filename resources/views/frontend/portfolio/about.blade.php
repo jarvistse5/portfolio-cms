@@ -2,11 +2,11 @@
     <div class="about-text-container">
         <div class="padding-intro">
             @foreach (explode(PHP_EOL,$user['intro']) as $sentense)
-            <h1 class="padding-intro">
-                @foreach (str_split($sentense) as $char)
-                    <span class="blast">{{$char}}</span>
-                @endforeach
-            </h1>
+                <div class="padding-intro intro-text">
+                    @foreach (str_split($sentense) as $char)
+                        <span class="blast">{{$char}}</span>
+                    @endforeach
+                </div>
             @endforeach
         </div>
         <div id="typing-position" class="typing" data-position="{{$user['subTitle']}}">

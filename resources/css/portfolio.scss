@@ -1,7 +1,21 @@
 @import '_variables.module.scss';
 
+@font-face {
+    font-family: SourceCodePro;
+    font-style: normal;
+    font-weight: normal;
+    src: url('@/fonts/SourceCodePro-Regular.ttf') format('truetype');;
+}
+
+@font-face {
+    font-family: SourceCodePro;
+    font-style: normal;
+    font-weight: bold;
+    src: url('@/fonts/SourceCodePro-Bold.ttf') format('truetype');;
+}
+
 body {
-    font-family: sans-serif;
+    font-family: SourceCodePro;
 }
 
 .portfolio-body {
@@ -134,6 +148,10 @@ body {
     align-items: center;
     gap: 1rem;
 
+    h1 {
+        @apply text-3xl md:text-4xl;
+    }
+
     .title-gradient {
         background: rgb(101,239,252);
         background: linear-gradient(90deg, rgba(101,239,252,1) 0%, rgba(240,46,194,1) 100%);        
@@ -159,6 +177,7 @@ body {
         position: absolute;
         top: 50%;
         left: 10%;
+        width: 75vw;
     }
 
     .padding-intro {
@@ -266,10 +285,10 @@ body {
     }
 }
 
-h1 {
+.intro-text {
     @apply text-2xl sm:text-4xl md:text-5xl lg:text-6xl;
     margin: unset;
-    font-family: sans-serif;
+    display: flex;
 }
 
 .blast {
@@ -278,6 +297,7 @@ h1 {
     animation-fill-mode: both;
     animation-iteration-count: 1;
     display: inline-block;
+    white-space: pre;
 }
 
 .blast:hover {

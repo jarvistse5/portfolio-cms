@@ -8,4 +8,7 @@
     @livewire('frontend.project-modal', [
         'user' => $user
     ])
+    <div class="scroll-to-top" id="scroll-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
 </section>

@@ -81,10 +81,10 @@ body {
     }
 
     .menu-button-bar1, .menu-button-bar2, .menu-button-bar3 {
-        width: 35px;
-        height: 5px;
+        width: 28px;
+        height: 4px;
         background-color: $primary-text;
-        margin: 6px 0;
+        margin: 4px 0;
         transition: 0.4s;
     }
     
@@ -95,11 +95,11 @@ body {
     .btn-close .menu-button-bar2 {opacity: 0;}
     
     .btn-close .menu-button-bar3 {
-        transform: translate(0, -11px) rotate(45deg);
+        transform: translate(0, -5px) rotate(45deg);
     }
 
     #menu-page-container {
-        background-color: #454545;
+        background-color: $primary-bg;
         color: $primary-text;
         position: fixed;
         left: 0;
@@ -248,7 +248,7 @@ body {
         .skill-session-divider {
             border-bottom: 2px solid $primary-theme;
             width: 30%;
-            margin: auto;
+            margin: 1rem auto;
         }
     }
 
@@ -261,7 +261,7 @@ body {
     }
     
     .skill-session-label {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: bold;
         text-align: center;
     }
@@ -518,7 +518,7 @@ body {
     }
 
     .project-grid-name {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .skill-label {

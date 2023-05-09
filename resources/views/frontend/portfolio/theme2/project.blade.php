@@ -3,7 +3,7 @@
         <h1>Project</h1>
         <div class="breakline"></div>
     </div>
-    @livewire('frontend.project-modal', [
+    @livewire('frontend.project-modal-theme2', [
         'user' => $user,
         'theme' => 2
     ])

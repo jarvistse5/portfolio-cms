@@ -530,7 +530,7 @@
         z-index: 30;
     
         .modal-content {
-            max-height: 80vh;
+            max-height: 60vh;
             overflow: auto;
         }
     
@@ -545,15 +545,15 @@
     
         .modal-slide {
             video, img {
-                max-height: 60vh;
+                max-height: 40vh;
                 width: auto;
                 margin: auto;
             }
     
             iframe {
-                max-height: 60vh;
+                max-height: 40vh;
                 width: 80%;
-                height: 50vh;
+                height: 40vh;
                 margin: auto;
             }
         }

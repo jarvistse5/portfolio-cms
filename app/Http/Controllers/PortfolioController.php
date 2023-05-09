@@ -360,7 +360,7 @@ class PortfolioController extends Controller
                 'name' => 'Hong Kong Science Festival 2023',
                 'description' => 'A virtual exhibition website. The exhibitors can upload their booth info and streaming, so the guests can join this festival virtually.',
                 'skills' => [
-                    'Laravel', 'Livewire', 'Javascript', 'TailwindCss'
+                    'Laravel', 'Livewire', 'Javascript', 'TailwindCss', 'uxui'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/scifest.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/scifest'),
@@ -369,7 +369,7 @@ class PortfolioController extends Controller
                 'name' => 'Virtually Versailles',
                 'description' => 'The app designed for the French May event is designed to allow tourists to have an immersive experience, combining AR interaction, hologram, 360 images and other technologies, so that everyone can understand of France and its art with fun.',
                 'skills' => [
-                    'React Native', 'Laravel'
+                    'React Native', 'Laravel', 'uxui'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/frenchmay.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/frenchmay', [
@@ -383,7 +383,7 @@ class PortfolioController extends Controller
                 'name' => 'i-CREATe Virtual Exhibition',
                 'description' => 'A virtual exhibition website. The exhibitors can upload their booth info and streaming, so the guests can join this festival virtually.',
                 'skills' => [
-                    'Laravel', 'Livewire', 'Javascript', 'TailwindCss'
+                    'Laravel', 'Livewire', 'Javascript', 'TailwindCss', 'graphic'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/i-create.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/i-create'),
@@ -392,7 +392,7 @@ class PortfolioController extends Controller
                 'name' => 'E-Signature Wall',
                 'description' => 'Sign the signature on iPad, and display the signature on the screen.',
                 'skills' => [
-                    'Laravel', 'Javascript', 'CSS'
+                    'Laravel', 'Javascript', 'CSS', 'uxui'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/e-signature.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/e-signature'),
@@ -401,7 +401,7 @@ class PortfolioController extends Controller
                 'name' => 'Coiner App',
                 'description' => 'An app to store member point and browse information.',
                 'skills' => [
-                    'React Native', 'Laravel'
+                    'React Native', 'Laravel', 'graphic'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/coiner.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/coiner'),
@@ -410,7 +410,7 @@ class PortfolioController extends Controller
                 'name' => 'iTrain B2B2C Convertion',
                 'description' => 'Convert e-learning platform into B2C / B2B2C model, and revamp the UI of the whole system.',
                 'skills' => [
-                    'Angular', 'Laravel'
+                    'Angular', 'Laravel', 'uxui'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/itrain.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/itrain', [
@@ -428,7 +428,7 @@ class PortfolioController extends Controller
                 'name' => 'File Picker Component',
                 'description' => 'A file picker component using Augular, which is allowing multi-select, adjust, preview function.',
                 'skills' => [
-                    'Angular'
+                    'Angular', 'uxui'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/filepicker.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/filepicker', [
@@ -442,7 +442,7 @@ class PortfolioController extends Controller
                 'name' => 'Masksapp',
                 'description' => 'Share mask information at the begining of COVID-19',
                 'skills' => [
-                    'Android Studio', 'Java', 'Firebase'
+                    'Android Studio', 'Java', 'Firebase', 'uxui'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/masksapp.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/masksapp', [
@@ -456,7 +456,7 @@ class PortfolioController extends Controller
                 'name' => 'Low Cost Book Tracking System Prototype',
                 'description' => 'Using RFID technology to real time track book, we build a prototype with a simple library management system and Android App for the staff.',
                 'skills' => [
-                    'RFID', 'Laravel', 'Android Studio', 'Java', 'C++'
+                    'RFID', 'Laravel', 'Android Studio', 'Java', 'C++', 'graphic'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/book-tracking.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/book-tracking', [

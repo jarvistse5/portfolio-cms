@@ -415,6 +415,27 @@
     
     #project {
         padding: 9rem 3rem;
+
+        .project-type-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+
+            .project-type-btn {
+                font-size: 1.5rem;
+                opacity: 0.3;
+            }
+
+            .selected-project-type {
+                opacity: 1;
+                font-weight: bold;
+                background: -webkit-linear-gradient(0deg, #C73BEB 6.69%, #F343C5 108.3%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
     
         .project-grid {
             @apply grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3;

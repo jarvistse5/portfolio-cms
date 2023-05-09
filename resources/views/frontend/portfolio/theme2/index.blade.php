@@ -21,6 +21,8 @@
         @vite(['resources/css/app.scss', 'resources/js/app.js'])
         @stack('post-head-css')
 
+        <script src="//unpkg.com/alpinejs" defer></script>
+
         {{-- <script 
             src='https://cdn.jsdelivr.net/npm/ms-cursor@1.2.0/index.min.js' 
             size="30"

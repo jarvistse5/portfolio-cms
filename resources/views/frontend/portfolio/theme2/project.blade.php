@@ -1,3 +1,6 @@
+<script>
+    var projects = @json($user['projects']);
+</script>
 <section id="project">
     <div class="section-title-container">
         <h1>Project</h1>

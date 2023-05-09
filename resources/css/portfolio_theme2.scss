@@ -417,91 +417,53 @@
         padding: 9rem 3rem;
     
         .project-grid {
-            @apply grid gap-8 grid-cols-1 md:grid-cols-2;
-    
-            .project-grid-item:nth-child(even) {
-                border-color: $secondary-theme;
-                color: $secondary-theme;
-    
-                .project-grid-body {
-                    border-color: $secondary-theme;
-                }
-    
-                .skill-label {
-                    border-color: $secondary-theme;
-                }
-            }
+            @apply grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
         }
-    
-        @media (min-width: 768px) {
-            .project-grid {
-                @apply grid gap-8 grid-cols-1 md:grid-cols-2;
-        
-                .project-grid-item:nth-child(4n+2),
-                .project-grid-item:nth-child(4n+3) {
-                    border-color: $secondary-theme;
-                    color: $secondary-theme;
-        
-                    .project-grid-body {
-                        border-color: $secondary-theme;
-                    }
-        
-                    .skill-label {
-                        border-color: $secondary-theme;
-                    }
-                }
-    
-                .project-grid-item:nth-child(4n+1),
-                .project-grid-item:nth-child(4n+4) {
-                    border-color: $primary-theme;
-                    color: $primary-theme;
-        
-                    .project-grid-body {
-                        border-color: $primary-theme;
-                    }
-        
-                    .skill-label {
-                        border-color: $primary-theme;
-                    }
-                }
-            }
-        }
-    
+
         .project-grid-item {
             background: $theme2-primary-bg;
             cursor: pointer;
-            border: 2px solid $primary-theme;
+            // border: 2px solid $primary-theme;
             border-radius: 10px;
             color: $primary-theme;
+            position: relative;
         }
     
         .project-grid-image {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-radius: 14px;
             background: #CCCCCC;
     
             img {
-                border-top-left-radius: 8px;
-                border-top-right-radius: 8px;
+                border-radius: 10px;
                 object-fit: contain;
                 margin: auto;
             }
         }
     
-        .project-grid-body {
-            padding: 1rem;
-            border-top: 2px solid $primary-theme;
+        .project-grid-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            background: linear-gradient(183.9deg, #2B126B 1.64%, #56126F 96.06%);
+            opacity: 0;
+            color: $theme2-primary-text;
+        }
+
+        .project-grid-layer:hover {
+            opacity: 0.8;
         }
     
         .project-grid-name {
             font-size: 1.2rem;
+            text-align: center;
         }
-    
-        .skill-label {
-            border: 2px solid $primary-theme;
-            border-radius: 50px;
-            padding: 4px 28px;
-        }
+
     }
     
     .modal {

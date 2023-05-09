@@ -7,10 +7,17 @@
                 data-asset-count="{{count($project['assets'])}}"
                 wire:click="selected({{$index}})">
                 <div class="project-grid-image">
-                    <img src="{{$project['cover_img']}}" alt="{{$project['name']}}">
+                    <img src="{{$project['cover_img']}}" alt="">
                 </div>
-                <div class="project-grid-layer">
+                <div class="project-grid-body">
                     <div class="project-grid-name">{{$project['name']}}</div>
+                    <div class="flex flex-wrap gap-3 py-2">
+                        @foreach ($project['skills'] as $skill)
+                            <div class="skill-label">
+                                {{$skill}}
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         @endforeach

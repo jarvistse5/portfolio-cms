@@ -37,6 +37,7 @@
             @include('frontend.portfolio.theme2.skills')
             @include('frontend.portfolio.theme2.education')
             @include('frontend.portfolio.theme2.experience')
+            @include('frontend.portfolio.theme2.project')
         </div>
         @livewireScripts()
     </body>

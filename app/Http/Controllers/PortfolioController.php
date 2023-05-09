@@ -355,6 +355,119 @@ class PortfolioController extends Controller
             ],
         ];
 
+        $projects = [
+            [
+                'name' => 'Hong Kong Science Festival 2023',
+                'description' => 'A virtual exhibition website. The exhibitors can upload their booth info and streaming, so the guests can join this festival virtually.',
+                'skills' => [
+                    'Laravel', 'Livewire', 'Javascript', 'TailwindCss'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/scifest.png',
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/scifest'),
+            ],
+            [
+                'name' => 'Virtually Versailles',
+                'description' => 'The app designed for the French May event is designed to allow tourists to have an immersive experience, combining AR interaction, hologram, 360 images and other technologies, so that everyone can understand of France and its art with fun.',
+                'skills' => [
+                    'React Native', 'Laravel'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/frenchmay.png',
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/frenchmay', [
+                    [
+                        'type' => 'youtube',
+                        'youtube_id' => 'EdNIHr3C5r0',
+                    ]
+                ]),
+            ],
+            [
+                'name' => 'i-CREATe Virtual Exhibition',
+                'description' => 'A virtual exhibition website. The exhibitors can upload their booth info and streaming, so the guests can join this festival virtually.',
+                'skills' => [
+                    'Laravel', 'Livewire', 'Javascript', 'TailwindCss'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/i-create.png',
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/i-create'),
+            ],
+            [
+                'name' => 'E-Signature Wall',
+                'description' => 'Sign the signature on iPad, and display the signature on the screen.',
+                'skills' => [
+                    'Laravel', 'Javascript', 'CSS'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/e-signature.png',
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/e-signature'),
+            ],
+            [
+                'name' => 'Coiner App',
+                'description' => 'An app to store member point and browse information.',
+                'skills' => [
+                    'React Native', 'Laravel'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/coiner.png',
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/coiner'),
+            ],
+            [
+                'name' => 'iTrain B2B2C Convertion',
+                'description' => 'Convert e-learning platform into B2C / B2B2C model, and revamp the UI of the whole system.',
+                'skills' => [
+                    'Angular', 'Laravel'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/itrain.png',
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/itrain', [
+                    [
+                        'type' => 'youtube',
+                        'youtube_id' => 'pigTNV_SNDA',
+                    ],
+                    [
+                        'type' => 'youtube',
+                        'youtube_id' => 'zbTLx5nQJ8Y',
+                    ],
+                ]),
+            ],
+            [
+                'name' => 'File Picker Component',
+                'description' => 'A file picker component using Augular, which is allowing multi-select, adjust, preview function.',
+                'skills' => [
+                    'Angular'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/filepicker.png',
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/filepicker', [
+                    [
+                        'type' => 'youtube',
+                        'youtube_id' => '25gmRKZuBFc',
+                    ],
+                ]),
+            ],
+            [
+                'name' => 'Masksapp',
+                'description' => 'Share mask information at the begining of COVID-19',
+                'skills' => [
+                    'Android Studio', 'Java', 'Firebase'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/masksapp.png',
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/masksapp', [
+                    [
+                        'type' => 'youtube',
+                        'youtube_id' => '2d5Q1Nvd01U',
+                    ]
+                ]),
+            ],
+            [
+                'name' => 'Low Cost Book Tracking System Prototype',
+                'description' => 'Using RFID technology to real time track book, we build a prototype with a simple library management system and Android App for the staff.',
+                'skills' => [
+                    'RFID', 'Laravel', 'Android Studio', 'Java', 'C++'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/book-tracking.png',
+                'assets' => $this->getProjectAssets('assets/jarvis_tse/book-tracking', [
+                    [
+                        'type' => 'youtube',
+                        'youtube_id' => 'O1yaCYtzeJs'
+                    ]
+                ]),
+            ]
+        ];
+
         $user = [
             'nickname' => 'Wing',
             'firstname' => 'Yuen Wing',
@@ -365,7 +478,7 @@ class PortfolioController extends Controller
             'contacts' => $contacts,
             'educations' => $educations,
             'experiences' => $experiences,
-            // 'projects' => $projects,
+            'projects' => $projects,
         ];
         $config = [
             'sessions' => [

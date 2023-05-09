@@ -31,19 +31,22 @@
                 @if (isset($user['contacts']['email']) && $user['contacts']['email'])
                     <a class="contact-button"
                         href="mailto: {{$user['contacts']['email']}}" target="_blank">
-                        <i class="fa-solid fa-square-envelope"></i>
+                        {{-- <i class="fa-solid fa-square-envelope"></i> --}}
+                        <img src="{{url('assets/images/icons/email.png')}}" alt="email">
                     </a>
                 @endif
                 @if (isset($user['contacts']['phone']) && $user['contacts']['phone'])
                     <a class="contact-button"
                         href="tel: {{$user['contacts']['phone']}}" target="_blank">
-                        <i class="fa-solid fa-square-phone"></i>
+                        {{-- <i class="fa-solid fa-square-phone"></i> --}}
+                        <img src="{{url('assets/images/icons/phone.png')}}" alt="phone">
                     </a>
                 @endif
                 @if (isset($user['contacts']['linkedin']) && $user['contacts']['linkedin'])
                     <a class="contact-button"
                         href="{{$user['contacts']['linkedin']}}" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
+                        {{-- <i class="fa-brands fa-linkedin"></i> --}}
+                        <img src="{{url('assets/images/icons/linkedin.png')}}" alt="linkedin">
                     </a>
                 @endif
                 @if (isset($user['contacts']['github']) && $user['contacts']['github'])
@@ -55,7 +58,8 @@
                 @if (isset($user['contacts']['resume']) && $user['contacts']['resume'])
                     <a class="contact-button"
                         href="{{$user['contacts']['resume']}}" target="_blank">
-                        <i class="fa-solid fa-file-pdf"></i>
+                        {{-- <i class="fa-solid fa-file-pdf"></i> --}}
+                        <img src="{{url('assets/images/icons/adobe.png')}}" alt="adobe">
                     </a>
                 @endif
             </div>

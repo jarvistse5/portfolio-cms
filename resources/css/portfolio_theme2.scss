@@ -90,7 +90,7 @@
         }
     
         #menu-page-container {
-            background-color: $primary-bg;
+            background-color: $theme2-primary-bg;
             color: $theme2-primary-text;
             position: fixed;
             left: 0;
@@ -123,6 +123,10 @@
                 justify-content: center;
                 width: 100%;
                 font-size: 36px;
+
+                a {
+                    width: 36px;
+                }
             }
         }
     }
@@ -464,7 +468,7 @@
         }
     
         .project-grid-item {
-            background: $primary-bg;
+            background: $theme2-primary-bg;
             cursor: pointer;
             border: 2px solid $primary-theme;
             border-radius: 10px;

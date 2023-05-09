@@ -8,6 +8,6 @@
         'theme' => 2
     ])
     <div class="scroll-to-top" id="scroll-to-top">
-        <i class="fa-solid fa-arrow-up"></i>
+        <i class="fa-solid fa-arrow-up gradient-text"></i>
     </div>
 </section>

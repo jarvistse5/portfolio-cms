@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Jarvis Tse Portfolio</title>
+        <title>{{$user['nickname']}} Portfolio</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,28 +21,22 @@
         @vite(['resources/css/app.scss', 'resources/js/app.js'])
         @stack('post-head-css')
 
-        <script 
+        {{-- <script 
             src='https://cdn.jsdelivr.net/npm/ms-cursor@1.2.0/index.min.js' 
             size="30"
-            {{-- gradient="#65effc, #72def7, #7fccf2, #8abced, #99a8e7, #a598e2, #b385dc, #bf74d7, #ca64d2, #db4ccb, #f02ec2" --}}
             >
         </script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ms-cursor@1.2.0/style.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ms-cursor@1.2.0/style.min.css"/> --}}
 
         @livewireStyles()
     </head>
-    <body class="portfolio-body">
-        <div class="about_bg">
-            <img src="{{url('assets/images/about_bg.png')}}" alt="background image">
-        </div>
-        @include('frontend.portfolio.header')
+    <body class="portfolio-body" id="portfolio_theme2">
+        @include('frontend.portfolio.theme1.header')
         <div class="portfolio-container">
-            <div id="body-bg-animation" class="animation-bg"></div>
-            @include('frontend.portfolio.about')
-            @include('frontend.portfolio.skills')
-            @include('frontend.portfolio.education')
-            @include('frontend.portfolio.experience')
-            @include('frontend.portfolio.project')
+            @include('frontend.portfolio.theme2.about')
+            @include('frontend.portfolio.theme2.skills')
+            @include('frontend.portfolio.theme2.education')
+            @include('frontend.portfolio.theme2.experience')
         </div>
         @livewireScripts()
     </body>

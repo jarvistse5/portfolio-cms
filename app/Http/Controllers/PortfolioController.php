@@ -231,7 +231,7 @@ class PortfolioController extends Controller
                 'project' => 'Project',
             ],
         ];
-        return view('frontend.portfolio.index', [
+        return view('frontend.portfolio.theme1.index', [
             'user' => $user,
             'config' => $config,
         ]);
@@ -255,5 +255,128 @@ class PortfolioController extends Controller
             ]);
         }
         return $assets;
+    }
+
+    public function wing() {
+        $contacts = [
+            'email' => 'jarvis.tse.developer@gmail.com',
+            'linkedin' => 'https://www.linkedin.com/in/wing-hei-tse-b991701b3/',
+            'phone' => '+1(416)8246455',
+            // 'github' => 'https://github.com/jarvistse5',
+            'resume' => env('APP_URL') . '/assets/jarvis_tse/doc/resume.pdf',
+        ];
+
+        $skills = [
+            [
+                'name' => 'Figma',
+                'image' => env('APP_URL') . '/assets/wing/skills/figma.png',
+            ],
+            [
+                'name' => 'Adobe Illustrator',
+                'image' => env('APP_URL') . '/assets/wing/skills/adobe_ai.png',
+            ],
+            [
+                'name' => 'Adobe Photoshop',
+                'image' => env('APP_URL') . '/assets/wing/skills/adobe_ps.png',
+            ],
+            [
+                'name' => 'Adobe Indesign',
+                'image' => env('APP_URL') . '/assets/wing/skills/adobe_id.png',
+            ],
+            [
+                'name' => 'Adobe XD',
+                'image' => env('APP_URL') . '/assets/wing/skills/adobe_xd.png',
+            ],
+            [
+                'name' => 'Adobe Premiere Pro',
+                'image' => env('APP_URL') . '/assets/wing/skills/adobe_pr.png',
+            ],
+            [
+                'name' => 'Adobe After Effect',
+                'image' => env('APP_URL') . '/assets/wing/skills/adobe_ae.png',
+            ],
+            [
+                'name' => 'Microsoft Office',
+                'image' => env('APP_URL') . '/assets/wing/skills/ms_office.png',
+            ]
+        ];
+
+        $educations = [
+            [
+                'name' => 'City University of Hong Kong',
+                'description' => 'Bachelor of Social Sciences in Asian and International Studies with Upper Second Class Honors',
+                'period_start' => '2017',
+                'period_end' => '2019',
+            ],
+            [
+                'name' => 'Community College of City University',
+                'description' => 'Associate of Business Administration in General Management with Distinction',
+                'period_start' => '2015',
+                'period_end' => '2017',
+            ]
+        ];
+        $experiences = [
+            [
+                'title' => 'Full Stack Developer',
+                'company' => 'EPISODE Limited',
+                'period_start' => 'March 2022',
+                'period_end' => 'Feb 2023',
+                'description' => [
+                    'Develop websites for virtual events',
+                    'Add innovative elements to physical activities, such as online rsvp form and app checkin, signatures wall etc.',
+                    'Design and implement event technology for company booth, such as AR photo, faceswap',
+                    'Interact with the team to solve programs and share experience',
+                ],
+            ],
+            [
+                'title' => 'Web Developer',
+                'company' => 'Impacts Technology Limited',
+                'period_start' => 'Oct 2020',
+                'period_end' => 'Dec 2021',
+                'description' => [
+                    'Develop payment and subscription system',
+                    'Convert e-learning platform into B2C / B2B2C model',
+                    'Revamp e-learning CMS website',
+                    'Responsible for the new functional development',
+                ],
+            ],
+            [
+                'title' => 'Programmer',
+                'company' => 'Fortune Information Technology Limited',
+                'period_start' => 'Jun 2019',
+                'period_end' => 'Aug 2019',
+                'description' => [
+                    'Develop AI-based speech-to-text engine',
+                    'Upgrade system and database for the other companies',
+                    'Help for bug fixing',
+                ],
+            ],
+        ];
+
+        $user = [
+            'nickname' => 'Wing',
+            'firstname' => 'Yuen Wing',
+            'lastname' => 'Chan',
+            'subTitle' => "UXUI DESIGNER / GRAPHIC DESIGNER",
+            'headerTitle' => 'PORTFOLIO',
+            'skills' => $skills,
+            'contacts' => $contacts,
+            'educations' => $educations,
+            'experiences' => $experiences,
+            // 'projects' => $projects,
+        ];
+        $config = [
+            'sessions' => [
+                'about' => 'About',
+                'skills' => 'Skills',
+                'education' => 'Education',
+                'experience' => 'Experience',
+                // 'project' => 'Project',
+            ],
+        ];
+        return view('frontend.portfolio.theme2.index', [
+            'user' => $user,
+            'config' => $config,
+        ]);
     }
 }

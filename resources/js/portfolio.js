@@ -7,7 +7,7 @@ import { DotsAnimationFactory } from "dots-animation";
 import colorVariables from '../css/_variables.module.scss';
 
 jQuery(($) => {
-    let pageEl = $('.portfolio-container');
+    let pageEl = $('#portfolio_theme1');
     if (pageEl.length === 0){
         return;
     }
@@ -251,5 +251,11 @@ jQuery(($) => {
     };
     var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'tagcloud'  ), settings );
 
+});
 
+jQuery(($) => {
+    let pageEl = $('#theme2');
+    if (pageEl.length === 0){
+        return;
+    }
 });

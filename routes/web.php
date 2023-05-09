@@ -30,3 +30,4 @@ Route::prefix('cms')->name('cms')->group(function () {
 });
 
 Route::get('jarvistse', [PortfolioController::class, 'index'])->name('.jarvistse');
+Route::get('wing', [PortfolioController::class, 'wing'])->name('.wing');

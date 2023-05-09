@@ -22,6 +22,31 @@ $secondary-theme-700: darken($secondary-theme, 30%);
 $secondary-theme-300: scale-color($secondary-theme, $lightness: 30%);
 $secondary-theme-100 : scale-color($secondary-theme, $lightness: 60%);
 
+// Theme2
+$theme2-primary-bg: #2B126B !default;
+$theme2-primary-bg-900: darken($theme2-primary-bg, 60%);
+$theme2-primary-bg-700: darken($theme2-primary-bg, 30%);
+$theme2-primary-bg-300: scale-color($theme2-primary-bg, $lightness: 30%);
+$theme2-primary-bg-100 : scale-color($theme2-primary-bg, $lightness: 60%);
+
+$theme2-primary-text: #FFFFFF !default;
+$theme2-primary-text-900: darken($theme2-primary-text, 60%);
+$theme2-primary-text-700: darken($theme2-primary-text, 30%);
+$theme2-primary-text-300: scale-color($theme2-primary-text, $lightness: 30%);
+$theme2-primary-text-100 : scale-color($theme2-primary-text, $lightness: 60%);
+
+$theme2-primary-theme: #D057B3;
+$theme2-primary-theme-900: darken($theme2-primary-theme, 60%);
+$theme2-primary-theme-700: darken($theme2-primary-theme, 30%);
+$theme2-primary-theme-300: scale-color($theme2-primary-theme, $lightness: 30%);
+$theme2-primary-theme-100 : scale-color($theme2-primary-theme, $lightness: 60%);
+
+$theme2-secondary-theme: #61CDD8;
+$theme2-secondary-theme-900: darken($theme2-secondary-theme, 60%);
+$theme2-secondary-theme-700: darken($theme2-secondary-theme, 30%);
+$theme2-secondary-theme-300: scale-color($theme2-secondary-theme, $lightness: 30%);
+$theme2-secondary-theme-100 : scale-color($theme2-secondary-theme, $lightness: 60%);
+
 :export {
     primaryBg: $primary-bg;
     primaryBg900: $primary-bg-900;
@@ -43,4 +68,25 @@ $secondary-theme-100 : scale-color($secondary-theme, $lightness: 60%);
     secondaryTheme700: $secondary-theme-700;
     secondaryTheme300: $secondary-theme-300;
     secondaryTheme100: $secondary-theme-100;
+
+    Theme2PrimaryBg: $theme2-primary-bg;
+    Theme2PrimaryBg900: $theme2-primary-bg-900;
+    Theme2PrimaryBg700: $theme2-primary-bg-700;
+    Theme2PrimaryBg300: $theme2-primary-bg-300;
+    Theme2PrimaryBg100: $theme2-primary-bg-100;
+    Theme2PrimaryText: $theme2-primary-text;
+    Theme2PrimaryText900: $theme2-primary-text-900;
+    Theme2PrimaryText700: $theme2-primary-text-700;
+    Theme2PrimaryText300: $theme2-primary-text-300;
+    Theme2PrimaryText100: $theme2-primary-text-100;
+    Theme2PrimaryTheme: $theme2-primary-theme;
+    Theme2PrimaryTheme900: $theme2-primary-theme-900;
+    Theme2PrimaryTheme700: $theme2-primary-theme-700;
+    Theme2PrimaryTheme300: $theme2-primary-theme-300;
+    Theme2PrimaryTheme100: $theme2-primary-theme-100;
+    Theme2SecondaryTheme: $theme2-secondary-theme;
+    Theme2SecondaryTheme900: $theme2-secondary-theme-900;
+    Theme2SecondaryTheme700: $theme2-secondary-theme-700;
+    Theme2SecondaryTheme300: $theme2-secondary-theme-300;
+    Theme2SecondaryTheme100: $theme2-secondary-theme-100;
 }

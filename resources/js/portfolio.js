@@ -254,8 +254,44 @@ jQuery(($) => {
 });
 
 jQuery(($) => {
-    let pageEl = $('#theme2');
+    let pageEl = $('#portfolio_theme2');
     if (pageEl.length === 0){
         return;
     }
+
+    $(".menu-item").on('click', function() {
+        var liText = $(this).attr('data-scroll');
+        $('html, body').animate({
+            scrollTop: $("#" + liText ).offset().top
+        }, 500);
+    });
+
+    $('#menu-button').on('click', function () {
+        $(this).toggleClass('btn-close');
+        if ($(this).hasClass('btn-close')) {
+            $('#menu-page-container').removeClass('hidden');
+        } else {
+            $('#menu-page-container').addClass('hidden');
+        }
+    });
+
+    $('.menu-item').on('click', function () {
+        $('#menu-page-container').addClass('hidden');
+        $('#menu-button').removeClass('btn-close');
+    });
+
+    $(window).on('scroll', function (event) {
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+            $('.header-container').addClass('primary-bg');
+        } else {
+            $('.header-container').removeClass('primary-bg');
+        }
+    });
+    
+    $('#view-skills-btn').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $("#skills" ).offset().top
+        }, 500);
+    });
 });

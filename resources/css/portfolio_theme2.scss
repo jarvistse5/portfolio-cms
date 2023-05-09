@@ -17,26 +17,34 @@
 #portfolio_theme2 {
 
     background-color: $theme2-primary-bg;
-    color: $primary-text;
+    color: $theme2-primary-text;
     font-family: SourceCodePro;
     
     .portfolio-container {
-        color: $primary-text;
+        color: $theme2-primary-text;
     }
     
     .primary-bg {
-        background-color: $primary-bg;
+        background-color: $theme2-primary-bg;
     }
     
     .header-container {
         z-index: 20;
-        // background-color: $primary-bg;
-        color: $primary-text;
+        color: $theme2-primary-text;
         position: fixed;
         top: 0;
         right: 0;
         padding: 20px 40px;
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-topic {
+            text-transform: uppercase;
+            font-size: 1.75rem;
+            font-weight: bold;
+        }
     
         .menu-container {
             display: flex;
@@ -47,7 +55,9 @@
         }
     
         .menu-item:hover {
-            color: $primary-theme;
+            background: -webkit-linear-gradient(0deg, #C73BEB 6.69%, #F343C5 108.3%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     
         .menu-container-mobile {
@@ -64,7 +74,7 @@
         .menu-button-bar1, .menu-button-bar2, .menu-button-bar3 {
             width: 28px;
             height: 4px;
-            background-color: $primary-text;
+            background-color: $theme2-primary-text;
             margin: 4px 0;
             transition: 0.4s;
         }
@@ -81,7 +91,7 @@
     
         #menu-page-container {
             background-color: $primary-bg;
-            color: $primary-text;
+            color: $theme2-primary-text;
             position: fixed;
             left: 0;
             right: 0;
@@ -93,12 +103,12 @@
                 display: flex;
                 flex-direction: column;
                 .menu-item {
-                    border-top: 1px solid $primary-text;
+                    border-top: 1px solid $theme2-primary-text;
                     padding: 20px 0;
                     text-align: center;
                     cursor: pointer;
                     &:last-child {
-                        border-bottom: 1px solid $primary-text;
+                        border-bottom: 1px solid $theme2-primary-text;
                     }
                 }
     

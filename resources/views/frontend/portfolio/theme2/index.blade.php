@@ -31,7 +31,7 @@
         @livewireStyles()
     </head>
     <body class="portfolio-body" id="portfolio_theme2">
-        @include('frontend.portfolio.theme1.header')
+        @include('frontend.portfolio.theme2.header')
         <div class="portfolio-container">
             @include('frontend.portfolio.theme2.about')
             @include('frontend.portfolio.theme2.skills')

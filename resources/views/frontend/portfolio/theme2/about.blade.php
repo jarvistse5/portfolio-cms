@@ -13,7 +13,7 @@
                 <button class="primary-action-btn">
                     view portfolio
                 </button>
-                <button class="secondary-action-btn">
+                <button id="view-skills-btn" class="secondary-action-btn">
                     view skill
                 </button>
             </div>

@@ -259,11 +259,12 @@ class PortfolioController extends Controller
 
     public function wing() {
         $contacts = [
-            'email' => 'jarvis.tse.developer@gmail.com',
-            'linkedin' => 'https://www.linkedin.com/in/wing-hei-tse-b991701b3/',
-            'phone' => '+1(416)8246455',
+            'email' => 'wing412.ca@gmail.com',
+            'linkedin' => 'https://www.linkedin.com/in/yuen-wing-chan-a027631b5/',
+            'phone' => '+1(416)8247821',
             // 'github' => 'https://github.com/jarvistse5',
-            'resume' => env('APP_URL') . '/assets/jarvis_tse/doc/resume.pdf',
+            'resume' => env('APP_URL') . '/assets/wing/doc/resume.pdf',
+            'portfolio' => env('APP_URL') . '/assets/wing/doc/portfolio.pdf',
         ];
 
         $skills = [

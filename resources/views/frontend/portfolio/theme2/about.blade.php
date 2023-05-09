@@ -10,7 +10,7 @@
             </div>
             <div class="breakline"></div>
             <div class="action-btn">
-                <button class="primary-action-btn">
+                <button id="view-portfolio-btn" class="primary-action-btn" data-url="{{$user['contacts']['portfolio']}}">
                     view portfolio
                 </button>
                 <button id="view-skills-btn" class="secondary-action-btn">

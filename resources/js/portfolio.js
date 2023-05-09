@@ -288,10 +288,18 @@ jQuery(($) => {
             $('.header-container').removeClass('primary-bg');
         }
     });
+
+    $('#view-portfolio-btn').on('click', function () {
+        let link = $('#view-portfolio-btn').attr('data-url');
+        if (link) {
+            window.open(link, '_blank');
+        }
+    });
     
     $('#view-skills-btn').on('click', function () {
         $('html, body').animate({
             scrollTop: $("#skills" ).offset().top
         }, 500);
     });
+
 });

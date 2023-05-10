@@ -299,7 +299,12 @@
     
     .blast:hover {
         animation-name: rubberBand;
-        color: #F6E71D;
+        color: $primary-theme;
+    }
+
+    .blast:nth-child(even):hover {
+        animation-name: rubberBand;
+        color: $secondary-theme;
     }
     
     #tagcloud {

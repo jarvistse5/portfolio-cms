@@ -201,6 +201,7 @@
             @apply flex flex-col md:flex-row;
             gap: 2rem;
             width: calc(100vw - 10vw - 32px - 12px);
+            height: calc(80vh - 82px);
             align-items: center;
             position: absolute;
             left: 5%;
@@ -209,14 +210,15 @@
 
             .about-user {
                 flex: 1;
-                // display: flex;
                 .about-name {
+                    @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
                     font-weight: 700;
-                    font-size: 3rem;
+                    // font-size: 3rem;
                 }
 
                 .subTitle {
-                    font-size: 1.2rem;
+                    @apply text-xl md:text-2xl lg:text-4xl;
+                    // font-size: 1.2rem;
                 }
 
                 .breakline {

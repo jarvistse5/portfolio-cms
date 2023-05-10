@@ -357,115 +357,59 @@ class PortfolioController extends Controller
 
         $projects = [
             [
-                'name' => 'Hong Kong Science Festival 2023',
-                'description' => 'A virtual exhibition website. The exhibitors can upload their booth info and streaming, so the guests can join this festival virtually.',
+                'name' => 'BDA',
+                'description' => 'I am description...',
                 'skills' => [
-                    'Laravel', 'Livewire', 'Javascript', 'TailwindCss', 'uxui'
+                    'uxui'
                 ],
-                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/scifest.png',
-                'assets' => $this->getProjectAssets('assets/jarvis_tse/scifest'),
+                'cover_img' => env('APP_URL') . '/assets/wing/projects/cover/BDA_mockup.jpg',
+                'assets' => $this->getProjectAssets('assets/wing/projects/BDA'),
             ],
             [
-                'name' => 'Virtually Versailles',
-                'description' => 'The app designed for the French May event is designed to allow tourists to have an immersive experience, combining AR interaction, hologram, 360 images and other technologies, so that everyone can understand of France and its art with fun.',
+                'name' => 'BioGene',
+                'description' => 'I am description...',
                 'skills' => [
-                    'React Native', 'Laravel', 'uxui'
+                    'uxui'
                 ],
-                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/frenchmay.png',
-                'assets' => $this->getProjectAssets('assets/jarvis_tse/frenchmay', [
-                    [
-                        'type' => 'youtube',
-                        'youtube_id' => 'EdNIHr3C5r0',
-                    ]
-                ]),
+                'cover_img' => env('APP_URL') . '/assets/wing/projects/cover/BioGene_mockup.jpg',
+                'assets' => $this->getProjectAssets('assets/wing/projects/BioGene'),
             ],
             [
-                'name' => 'i-CREATe Virtual Exhibition',
-                'description' => 'A virtual exhibition website. The exhibitors can upload their booth info and streaming, so the guests can join this festival virtually.',
+                'name' => 'Daydaycook',
+                'description' => 'I am description...',
                 'skills' => [
-                    'Laravel', 'Livewire', 'Javascript', 'TailwindCss', 'graphic'
+                    'uxui'
                 ],
-                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/i-create.png',
-                'assets' => $this->getProjectAssets('assets/jarvis_tse/i-create'),
+                'cover_img' => env('APP_URL') . '/assets/wing/projects/cover/DayDayCook_mockup.jpg',
+                'assets' => $this->getProjectAssets('assets/wing/projects/Daydaycook'),
             ],
             [
-                'name' => 'E-Signature Wall',
-                'description' => 'Sign the signature on iPad, and display the signature on the screen.',
+                'name' => 'George Patrick',
+                'description' => 'I am description...',
                 'skills' => [
-                    'Laravel', 'Javascript', 'CSS', 'uxui'
+                    'uxui'
                 ],
-                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/e-signature.png',
-                'assets' => $this->getProjectAssets('assets/jarvis_tse/e-signature'),
+                'cover_img' => env('APP_URL') . '/assets/wing/projects/cover/George Patrick_mockup.jpg',
+                'assets' => $this->getProjectAssets('assets/wing/projects/George Patrick'),
             ],
             [
-                'name' => 'Coiner App',
-                'description' => 'An app to store member point and browse information.',
+                'name' => 'Reuteri',
+                'description' => 'I am description...',
                 'skills' => [
-                    'React Native', 'Laravel', 'graphic'
+                    'uxui'
                 ],
-                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/coiner.png',
-                'assets' => $this->getProjectAssets('assets/jarvis_tse/coiner'),
+                'cover_img' => env('APP_URL') . '/assets/wing/projects/cover/Reuteri_mockup.jpg',
+                'assets' => $this->getProjectAssets('assets/wing/projects/Reuteri'),
             ],
             [
-                'name' => 'iTrain B2B2C Convertion',
-                'description' => 'Convert e-learning platform into B2C / B2B2C model, and revamp the UI of the whole system.',
+                'name' => 'TAB',
+                'description' => 'I am description...',
                 'skills' => [
-                    'Angular', 'Laravel', 'uxui'
+                    'uxui'
                 ],
-                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/itrain.png',
-                'assets' => $this->getProjectAssets('assets/jarvis_tse/itrain', [
-                    [
-                        'type' => 'youtube',
-                        'youtube_id' => 'pigTNV_SNDA',
-                    ],
-                    [
-                        'type' => 'youtube',
-                        'youtube_id' => 'zbTLx5nQJ8Y',
-                    ],
-                ]),
+                'cover_img' => env('APP_URL') . '/assets/wing/projects/cover/TAB_mockup.jpg',
+                'assets' => $this->getProjectAssets('assets/wing/projects/TAB'),
             ],
-            [
-                'name' => 'File Picker Component',
-                'description' => 'A file picker component using Augular, which is allowing multi-select, adjust, preview function.',
-                'skills' => [
-                    'Angular', 'uxui'
-                ],
-                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/filepicker.png',
-                'assets' => $this->getProjectAssets('assets/jarvis_tse/filepicker', [
-                    [
-                        'type' => 'youtube',
-                        'youtube_id' => '25gmRKZuBFc',
-                    ],
-                ]),
-            ],
-            [
-                'name' => 'Masksapp',
-                'description' => 'Share mask information at the begining of COVID-19',
-                'skills' => [
-                    'Android Studio', 'Java', 'Firebase', 'uxui'
-                ],
-                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/masksapp.png',
-                'assets' => $this->getProjectAssets('assets/jarvis_tse/masksapp', [
-                    [
-                        'type' => 'youtube',
-                        'youtube_id' => '2d5Q1Nvd01U',
-                    ]
-                ]),
-            ],
-            [
-                'name' => 'Low Cost Book Tracking System Prototype',
-                'description' => 'Using RFID technology to real time track book, we build a prototype with a simple library management system and Android App for the staff.',
-                'skills' => [
-                    'RFID', 'Laravel', 'Android Studio', 'Java', 'C++', 'graphic'
-                ],
-                'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/book-tracking.png',
-                'assets' => $this->getProjectAssets('assets/jarvis_tse/book-tracking', [
-                    [
-                        'type' => 'youtube',
-                        'youtube_id' => 'O1yaCYtzeJs'
-                    ]
-                ]),
-            ]
         ];
 
         $user = [

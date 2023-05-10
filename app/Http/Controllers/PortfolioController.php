@@ -360,7 +360,7 @@ class PortfolioController extends Controller
                 'name' => 'BDA Banking app',
                 'description' => 'This project is to create an app for one of the bank in Macau. In this app, it provides the experience of online banking services to end-users. The design process included high fidelity UI design and user flow.',
                 'skills' => [
-                    'graphic'
+                    'uxui'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/wing/projects/cover/BDA_mockup.jpg',
                 'assets' => $this->getProjectAssets('assets/wing/projects/BDA'),

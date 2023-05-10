@@ -1,6 +1,12 @@
 <div>
-    <div x-data="{ type: 'uxui', projects: projects }" x-cloak>
+    <div x-data="{ type: 'all', projects: projects }" x-cloak>
         <div class="project-type-container">
+            <button 
+                x-on:click="type = 'all'" 
+                class="project-type-btn"
+                :class="{'selected-project-type': type == 'all'}">
+                All
+            </button>
             <button 
                 x-on:click="type = 'uxui'" 
                 class="project-type-btn"
@@ -20,7 +26,7 @@
                     id="project-grid-{{$index}}" 
                     data-id="{{$index}}"
                     data-asset-count="{{count($project['assets'])}}"
-                    x-show="projects[{{$index}}].skills.includes(type)"
+                    x-show="type == 'all' || projects[{{$index}}].skills.includes(type)"
                     wire:click="selected({{$index}})">
                     <div class="project-grid-image">
                         <img src="{{$project['cover_img']}}" alt="{{$project['name']}}">

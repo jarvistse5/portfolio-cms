@@ -357,17 +357,17 @@ class PortfolioController extends Controller
 
         $projects = [
             [
-                'name' => 'BDA',
-                'description' => 'I am description...',
+                'name' => 'BDA Banking app',
+                'description' => 'This project is to create an app for one of the bank in Macau. In this app, it provides the experience of online banking services to end-users. The design process included high fidelity UI design and user flow.',
                 'skills' => [
-                    'uxui'
+                    'graphic'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/wing/projects/cover/BDA_mockup.jpg',
                 'assets' => $this->getProjectAssets('assets/wing/projects/BDA'),
             ],
             [
-                'name' => 'BioGene',
-                'description' => 'I am description...',
+                'name' => 'BioGene Service ticket system',
+                'description' => 'This project is to create a ticket system for the company to track the status of each service. The design process included user flow and high fidelity UI design.',
                 'skills' => [
                     'uxui'
                 ],
@@ -375,8 +375,8 @@ class PortfolioController extends Controller
                 'assets' => $this->getProjectAssets('assets/wing/projects/BioGene'),
             ],
             [
-                'name' => 'Daydaycook',
-                'description' => 'I am description...',
+                'name' => 'Daydaycook app',
+                'description' => 'In this cooking app, it aims to tackle people don\'t know what to do when they have ingredients, or how they can mix and match with the existing ingredients. The design process included information architecture, low fidelity wireframe, high fidelity UI design and prototype.',
                 'skills' => [
                     'uxui'
                 ],
@@ -384,8 +384,8 @@ class PortfolioController extends Controller
                 'assets' => $this->getProjectAssets('assets/wing/projects/Daydaycook'),
             ],
             [
-                'name' => 'George Patrick',
-                'description' => 'I am description...',
+                'name' => 'George Patrick e-commerce website',
+                'description' => 'This project is to revamp a e-commerce website for a luxury brand in the United State. The design process included information architecture and high fidelity UI design.',
                 'skills' => [
                     'uxui'
                 ],
@@ -393,8 +393,8 @@ class PortfolioController extends Controller
                 'assets' => $this->getProjectAssets('assets/wing/projects/George Patrick'),
             ],
             [
-                'name' => 'Reuteri',
-                'description' => 'I am description...',
+                'name' => 'Reuteri informative website',
+                'description' => 'This project is to revamp the informative website for a Hong Kong brand called "Reuteri" which selling probiotics products. The design process included information architecture and high fidelity UI design.',
                 'skills' => [
                     'uxui'
                 ],
@@ -402,8 +402,8 @@ class PortfolioController extends Controller
                 'assets' => $this->getProjectAssets('assets/wing/projects/Reuteri'),
             ],
             [
-                'name' => 'TAB',
-                'description' => 'I am description...',
+                'name' => 'Taketab app',
+                'description' => 'It is a food scanning app allows users to easily track their nutritional intake by simply scanning the front of food packages. The design process included information architecture and high fidelity UI design.',
                 'skills' => [
                     'uxui'
                 ],
@@ -430,7 +430,7 @@ class PortfolioController extends Controller
                 'skills' => 'Skills',
                 'education' => 'Education',
                 'experience' => 'Experience',
-                // 'project' => 'Project',
+                'project' => 'Project',
             ],
         ];
         return view('frontend.portfolio.theme2.index', [

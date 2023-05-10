@@ -14,11 +14,25 @@
     src: url('@/fonts/SourceCodePro-Bold.ttf') format('truetype');;
 }
 
+@font-face {
+    font-family: Tajawal;
+    font-style: normal;
+    font-weight: normal;
+    src: url('@/fonts/Tajawal-Regular.ttf') format('truetype');;
+}
+
+@font-face {
+    font-family: Tajawal;
+    font-style: normal;
+    font-weight: bold;
+    src: url('@/fonts/Tajawal-Bold.ttf') format('truetype');;
+}
+
 #portfolio_theme2 {
 
     background-color: $theme2-primary-bg;
     color: $theme2-primary-text;
-    font-family: SourceCodePro;
+    font-family: Tajawal;
     
     .portfolio-container {
         color: $theme2-primary-text;

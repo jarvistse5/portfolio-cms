@@ -36,6 +36,7 @@
     
     .portfolio-container {
         color: $theme2-primary-text;
+        position: relative;
     }
     
     .primary-bg {
@@ -600,6 +601,15 @@
         -webkit-mask-composite: xor;
         mask-composite: exclude;
         pointer-events: none;
+    }
+
+    .spotlight {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        aspect-ratio: 1/1;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(150, 94, 201, 0.3) 0%, rgba(150, 94, 201, 0) 100%);
     }
 
 }

@@ -40,6 +40,7 @@
             @include('frontend.portfolio.theme2.education')
             @include('frontend.portfolio.theme2.experience')
             @include('frontend.portfolio.theme2.project')
+            <div id="spotlight-1" class="spotlight"></div>
         </div>
         @livewireScripts()
     </body>

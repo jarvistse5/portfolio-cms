@@ -307,4 +307,47 @@ jQuery(($) => {
         return false;
     });
 
+    var innerWidth = window.innerWidth;
+    var innerHeight = document.body.scrollHeight;
+    var lightWidth = innerWidth / 2;
+    var lightHight = lightWidth;
+    var positionX = 0;
+    var positionY = 0;
+    var toRight = true;
+    var toBottom = true;
+    function spotlightMove() {
+        if (positionX <= 0) {
+            toRight = true;
+        }
+        if (positionX > innerWidth - lightWidth) {
+            toRight = false;
+        }
+        if (positionY <= 0) {
+            toBottom = true;
+        }
+        if (positionY > innerHeight - lightHight) {
+            toBottom = false;
+        }
+        if (toRight) {
+            positionX += 10;
+        } else {
+            positionX -= 10;
+        }
+
+        if (toBottom) {
+            positionY += 10;
+        } else {
+            positionY -= 10;
+        }
+
+        $('#spotlight-1').css({
+            top: positionY,
+            left: positionX
+        });
+    }
+
+    setInterval(function () {
+        spotlightMove();
+    }, 100);
+
 });

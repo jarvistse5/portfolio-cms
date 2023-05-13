@@ -231,7 +231,7 @@ jQuery(($) => {
         fov: 800,
         speed: 0.5,
         fontFamily: 'Oswald, Arial, sans-serif',
-        fontSize: '24',
+        fontSize: $( window ).width() > 768 ? '18' : '12',
         fontColor: colorVariables.primaryTheme100,
         fontWeight: 'normal',//bold
         fontStyle: 'normal',//italic 

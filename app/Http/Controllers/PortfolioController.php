@@ -20,30 +20,30 @@ class PortfolioController extends Controller
         $skills = [
             'HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'Livewire', 'AlpineJS',
             'Docker', 'AWS', 'Bootstrap', 'Java', 'ReactJS', 'React Native',
-            'TailwindCSS', 'Python', 'C++', 'Angular 2', 'MySQL', 'Git', 'Stripe',
-            'Redis', 'Nginx', 'jQuery',
+            'TailwindCSS', 'Python', 'C++', 'Angular', 'MySQL', 'RDBMS', 'Git', 'Stripe', 'Paypal',
+            'Redis', 'Nginx', 'Apache', 'jQuery', 'Django', 'OAuth', 'WebSocket', 'Postman', 'JMeter',
+            'ChatGPT', 'Stable Diffusion', 'RESTful API', 'OOP', 'MVC', 'Agile'
         ];
         $skillRate = [
             'Frontend' => [
-                'html, css, javascript' => 0.9,
-                'TailwindCSS' => 0.7,
+                'HTML, CSS, JavaScript' => 1.0,
+                'Angular' => 0.8,
+                'TailwindCSS, Bootstrap' => 0.8,
                 'React Native' => 0.6,
-                'Angular 2' => 0.6,
-                'bootstrap' => 0.5,
-                'ReactJS' => 0.1,
+                'ReactJS' => 0.4,
             ],
             'Backend' => [
-                'Laravel' => 0.9,
-                'PHP' => 0.8,
-                'MySQL' => 0.7,
-                'Livewire' => 0.7,
+                'PHP, Laravel' => 1.0,
+                'Python, Django' => 0.6,
+                'Java' => 0.6,
+                'MySQL, RDBMS' => 0.6,
+                'C++, C#' => 0.2,
             ],
             'Others' => [
+                'Linux' => 0.8,
                 'Docker' => 0.6,
                 'Git' => 0.6,
-                'Java' => 0.5,
-                'Python' => 0.4,
-                'AWS' => 0.3,
+                'AWS' => 0.4,
             ],
         ];
         $educations = [

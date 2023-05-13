@@ -315,29 +315,30 @@ jQuery(($) => {
     var positionY = 0;
     var toRight = true;
     var toBottom = true;
+    var moveSpeed = 10;
     function spotlightMove() {
         if (positionX <= 0) {
             toRight = true;
         }
-        if (positionX > innerWidth - lightWidth) {
+        if (positionX > innerWidth - lightWidth - moveSpeed) {
             toRight = false;
         }
         if (positionY <= 0) {
             toBottom = true;
         }
-        if (positionY > innerHeight - lightHight) {
+        if (positionY > innerHeight - lightHight - moveSpeed) {
             toBottom = false;
         }
         if (toRight) {
-            positionX += 10;
+            positionX += moveSpeed;
         } else {
-            positionX -= 10;
+            positionX -= moveSpeed;
         }
 
         if (toBottom) {
-            positionY += 10;
+            positionY += moveSpeed;
         } else {
-            positionY -= 10;
+            positionY -= moveSpeed;
         }
 
         $('#spotlight-1').css({

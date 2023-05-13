@@ -17,30 +17,35 @@
             <a class="contact-button"
                 href="mailto: {{$user['contacts']['email']}}" target="_blank">
                 <i class="fa-solid fa-square-envelope"></i>
+                <div class="contact-button-text">{{$user['contacts']['email']}}</div>
             </a>
         @endif
         @if (isset($user['contacts']['phone']) && $user['contacts']['phone'])
             <a class="contact-button"
                 href="tel: {{$user['contacts']['phone']}}" target="_blank">
                 <i class="fa-solid fa-square-phone"></i>
+                <div class="contact-button-text">{{$user['contacts']['phone']}}</div>
             </a>
         @endif
         @if (isset($user['contacts']['linkedin']) && $user['contacts']['linkedin'])
             <a class="contact-button"
                 href="{{$user['contacts']['linkedin']}}" target="_blank">
                 <i class="fa-brands fa-linkedin"></i>
+                <div class="contact-button-text">Visit My Linkedin</div>
             </a>
         @endif
         @if (isset($user['contacts']['github']) && $user['contacts']['github'])
             <a class="contact-button"
                 href="{{$user['contacts']['github']}}" target="_blank">
                 <i class="fa-brands fa-github"></i>
+                <div class="contact-button-text">Visit My GitHub</div>
             </a>
         @endif
         @if (isset($user['contacts']['resume']) && $user['contacts']['resume'])
             <a class="contact-button"
                 href="{{$user['contacts']['resume']}}" target="_blank">
                 <i class="fa-solid fa-file-pdf"></i>
+                <div class="contact-button-text">View My Resume</div>
             </a>
         @endif
     </div>

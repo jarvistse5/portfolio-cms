@@ -11,7 +11,7 @@ class PortfolioController extends Controller
     public function index()
     {
         $contacts = [
-            'email' => 'jarvis.tse.developer@gmail.com',
+            'email' => 'jarvis.tse.wh.ca@gmail.com',
             'linkedin' => 'https://www.linkedin.com/in/wing-hei-tse-b991701b3/',
             'phone' => '+1(416)8246455',
             'github' => 'https://github.com/jarvistse5',

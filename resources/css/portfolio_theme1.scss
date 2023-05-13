@@ -217,14 +217,35 @@
         right: 5%;
         bottom: 10%;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         flex-direction: column;
+
         gap: 12px;
     
         a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
             i {
-              font-size: 36px;
-          }
+                font-size: 36px;
+            }
+
+            &:hover {
+                .contact-button-text {
+                    display: flex;
+                }
+            }
+        }
+
+        .contact-button-text {
+            background: $primary-text;
+            height: 35px;
+            font-size: 1rem;
+            color: $primary-bg;
+            display: none;
+            align-items: center;
+            padding: 0 1rem;
+            border-radius: 25px;
         }
     }
     

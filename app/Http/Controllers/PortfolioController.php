@@ -19,7 +19,7 @@ class PortfolioController extends Controller
         ];
         $skills = [
             'HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'Livewire', 'AlpineJS',
-            'Docker', 'AWS', 'Bootstrap', 'Java', 'ReactJS', 'React Native',
+            'Docker', 'AWS', 'Bootstrap', 'Java', 'Spring Boot', 'ReactJS', 'React Native',
             'TailwindCSS', 'Python', 'C++', 'Angular', 'MySQL', 'RDBMS', 'Git', 'Stripe', 'Paypal',
             'Redis', 'Nginx', 'Apache', 'jQuery', 'Django', 'OAuth', 'WebSocket', 'Postman', 'JMeter',
             'ChatGPT', 'Stable Diffusion', 'RESTful API', 'OOP', 'MVC', 'Agile'
@@ -35,7 +35,7 @@ class PortfolioController extends Controller
             'Backend' => [
                 'PHP, Laravel' => 1.0,
                 'Python, Django' => 0.6,
-                'Java' => 0.6,
+                'Java, Spring Boot' => 0.6,
                 'MySQL, RDBMS' => 0.6,
                 'C++, C#' => 0.2,
             ],

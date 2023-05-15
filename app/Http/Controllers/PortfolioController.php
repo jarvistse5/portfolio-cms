@@ -15,7 +15,7 @@ class PortfolioController extends Controller
             'linkedin' => 'https://www.linkedin.com/in/wing-hei-tse-b991701b3/',
             'phone' => '+1(416)8246455',
             'github' => 'https://github.com/jarvistse5',
-            'resume' => env('APP_URL') . '/assets/jarvis_tse/doc/resume.pdf',
+            'resume' => env('APP_URL') . '/assets/jarvis_tse/doc/jarvis_tse_resume.pdf',
         ];
         $skills = [
             'HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'Livewire', 'AlpineJS',
@@ -50,50 +50,51 @@ class PortfolioController extends Controller
             [
                 'name' => 'The Hong Kong University of Science and Technology',
                 'description' => 'Bachler of Engineering in Computer Engineering with Second Class Honors Division I',
-                'period_start' => '2017',
-                'period_end' => '2020',
+                'period_start' => '09/2017',
+                'period_end' => '11/2020',
             ],
             [
                 'name' => 'Community College of City University',
                 'description' => 'Associate of Engineering with Credit',
-                'period_start' => '2015',
-                'period_end' => '2017',
+                'period_start' => '09/2015',
+                'period_end' => '07/2017',
             ]
         ];
         $experiences = [
             [
                 'title' => 'Full Stack Developer',
                 'company' => 'EPISODE Limited',
-                'period_start' => 'March 2022',
-                'period_end' => 'Feb 2023',
+                'period_start' => '03/2022',
+                'period_end' => '02/2023',
                 'description' => [
-                    'Develop websites for virtual events',
-                    'Add innovative elements to physical activities, such as online rsvp form and app checkin, signatures wall etc.',
-                    'Design and implement event technology for company booth, such as AR photo, faceswap',
-                    'Interact with the team to solve programs and share experience',
+                    'Designed and implemented a virtual event platform from scratch to host online conferences and virtual exhibitions. The platform includes different interactive features such as AR, chat rooms, live streaming, polling, and Q&A.',
+                    'Maintained an all-in-one event system, including registration, email, check-in, and name badge printing. Provided real-time technical support for every project.',
+                    'Provided customized IT solutions for more than ten clients, including Lamborghini, Prada, AIA, Tesla, and FWD.',
+                    'Developed a customized long-term mobile app for clients\' guests to get regular updates, register for events, and earn rewards by joining activities.',
+                    'Participated in researching and developing new event technologies, such as AR photo, AI-based face swap, and data visualization.'
                 ],
             ],
             [
                 'title' => 'Web Developer',
                 'company' => 'Impacts Technology Limited',
-                'period_start' => 'Oct 2020',
-                'period_end' => 'Dec 2021',
+                'period_start' => '10/2020',
+                'period_end' => '12/2021',
                 'description' => [
-                    'Develop payment and subscription system',
-                    'Convert e-learning platform into B2C / B2B2C model',
-                    'Revamp e-learning CMS website',
-                    'Responsible for the new functional development',
+                    'Maintained an e-learning platform and built tailor-made, professional, and comprehensive cloud-based corporate training solutions for both online self-directed learning and face-to-face interactive training.',
+                    'Converted the e-learning platform into a B2C/B2B2C model and implemented a payment and subscription policy using Stripe.',
+                    'Revamped a CMS by optimizing API performance, restructuring the database, and improving the user experience and interface.',
+                    'Collaborated with project managers and the mobile application team to understand business requirements and regularly deliver complex features.',
                 ],
             ],
             [
                 'title' => 'Programmer',
                 'company' => 'Fortune Information Technology Limited',
-                'period_start' => 'Jun 2019',
-                'period_end' => 'Aug 2019',
+                'period_start' => '06/2019',
+                'period_end' => '08/2019',
                 'description' => [
-                    'Develop AI-based speech-to-text engine',
-                    'Upgrade system and database for the other companies',
-                    'Help for bug fixing',
+                    'Researched and developed an AI-based speech-to-text engine and embedded it into computer telephony integration.',
+                    'Collaborated with clients\' tech team to upgrade the enterprise management system.',
+                    'Participated in website development, including coding simple features, testing, and fixing bugs.',
                 ],
             ],
         ];

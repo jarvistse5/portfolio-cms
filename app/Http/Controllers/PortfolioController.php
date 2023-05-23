@@ -412,7 +412,7 @@ class PortfolioController extends Controller
                 'assets' => $this->getProjectAssets('assets/wing/projects/TAB'),
             ],
             [
-                'name' => 'Sunlife',
+                'name' => 'Sunlife - Internal training video storyboard',
                 'description' => "",
                 'skills' => [
                     'graphic'
@@ -421,7 +421,7 @@ class PortfolioController extends Controller
                 'assets' => $this->getProjectAssets('assets/wing/projects/Sunlife'),
             ],
             [
-                'name' => 'Microsoft',
+                'name' => 'Microsoft - Microsoft power platform promotional video storyboard',
                 'description' => "",
                 'skills' => [
                     'graphic'
@@ -430,7 +430,7 @@ class PortfolioController extends Controller
                 'assets' => $this->getProjectAssets('assets/wing/projects/Microsoft'),
             ],
             [
-                'name' => 'Power Soul',
+                'name' => 'Hong Kong 2022 Power Soul - Social Media Post',
                 'description' => "",
                 'skills' => [
                     'graphic'

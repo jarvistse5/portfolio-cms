@@ -411,6 +411,33 @@ class PortfolioController extends Controller
                 'cover_img' => env('APP_URL') . '/assets/wing/projects/cover/TAB_mockup.jpg',
                 'assets' => $this->getProjectAssets('assets/wing/projects/TAB'),
             ],
+            [
+                'name' => 'Sunlife',
+                'description' => "",
+                'skills' => [
+                    'graphic'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/wing/projects/cover/Sunlife.jpg',
+                'assets' => $this->getProjectAssets('assets/wing/projects/Sunlife'),
+            ],
+            [
+                'name' => 'Microsoft',
+                'description' => "",
+                'skills' => [
+                    'graphic'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/wing/projects/cover/Microsoft.jpg',
+                'assets' => $this->getProjectAssets('assets/wing/projects/Microsoft'),
+            ],
+            [
+                'name' => 'Power Soul',
+                'description' => "",
+                'skills' => [
+                    'graphic'
+                ],
+                'cover_img' => env('APP_URL') . '/assets/wing/projects/cover/PowerSoul.jpg',
+                'assets' => $this->getProjectAssets('assets/wing/projects/PowerSoul'),
+            ],
         ];
 
         $user = [

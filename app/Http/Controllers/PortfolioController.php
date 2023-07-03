@@ -18,11 +18,11 @@ class PortfolioController extends Controller
             'resume' => env('APP_URL') . '/assets/jarvis_tse/doc/jarvis_tse_resume.pdf',
         ];
         $skills = [
-            'HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'Livewire', 'AlpineJS',
-            'Docker', 'AWS', 'Bootstrap', 'Java', 'Spring Boot', 'ReactJS', 'React Native',
+            'HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'Livewire', 'Alpine.js',
+            'Docker', 'AWS', 'Bootstrap', 'Java', 'Spring Boot', 'React.js', 'React Native',
             'TailwindCSS', 'Python', 'C++', 'Angular', 'MySQL', 'RDBMS', 'Git', 'Stripe', 'Paypal',
             'Redis', 'Nginx', 'Apache', 'jQuery', 'Django', 'OAuth', 'WebSocket', 'Postman', 'JMeter',
-            'ChatGPT', 'Stable Diffusion', 'RESTful API', 'OOP', 'MVC', 'Agile'
+            'ChatGPT', 'Stable Diffusion', 'RESTful API', 'OOP', 'MVC', 'Agile', 'Node.js', 'Express.js'
         ];
         $skillRate = [
             'Frontend' => [
@@ -30,14 +30,14 @@ class PortfolioController extends Controller
                 'Angular' => 0.8,
                 'TailwindCSS, Bootstrap' => 0.8,
                 'React Native' => 0.6,
-                'ReactJS' => 0.4,
+                'React.js' => 0.6,
             ],
             'Backend' => [
                 'PHP, Laravel' => 1.0,
+                'MySQL, MongoDB' => 0.6,
+                'Node.js, Express.js' => 0.6,
                 'Python, Django' => 0.6,
-                'Java, Spring Boot' => 0.6,
-                'MySQL, RDBMS' => 0.6,
-                'C++, C#' => 0.2,
+                'Java, Spring Boot' => 0.2,
             ],
             'Others' => [
                 'Linux' => 0.8,
@@ -112,7 +112,7 @@ class PortfolioController extends Controller
                 'name' => 'Virtually Versailles',
                 'description' => 'The app designed for the French May event is designed to allow tourists to have an immersive experience, combining AR interaction, hologram, 360 images and other technologies, so that everyone can understand of France and its art with fun.',
                 'skills' => [
-                    'React Native', 'Laravel'
+                    'React Native', 'Node.js', 'Express.js', 'MongoDB'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/frenchmay.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/frenchmay', [
@@ -144,7 +144,7 @@ class PortfolioController extends Controller
                 'name' => 'Coiner App',
                 'description' => 'An app to store member point and browse information.',
                 'skills' => [
-                    'React Native', 'Laravel'
+                    'React Native', 'Node.js', 'Express.js', 'MongoDB'
                 ],
                 'cover_img' => env('APP_URL') . '/assets/jarvis_tse/cover/coiner.png',
                 'assets' => $this->getProjectAssets('assets/jarvis_tse/coiner'),

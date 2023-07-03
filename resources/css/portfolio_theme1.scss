@@ -237,6 +237,10 @@
             }
         }
 
+        .contact-button {
+            z-index: 5;
+        }
+
         .contact-button-text {
             background: $primary-text;
             height: 35px;

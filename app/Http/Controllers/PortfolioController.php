@@ -264,7 +264,7 @@ class PortfolioController extends Controller
             'linkedin' => 'https://www.linkedin.com/in/yuen-wing-chan-a027631b5/',
             'phone' => '+1(416)8247821',
             // 'github' => 'https://github.com/jarvistse5',
-            'resume' => env('APP_URL') . '/assets/wing/doc/resume.pdf',
+            'resume' => env('APP_URL') . '/assets/wing/doc/yuen_wing_chan_resume.pdf',
             'portfolio' => env('APP_URL') . '/assets/wing/doc/portfolio.pdf',
         ];
 
